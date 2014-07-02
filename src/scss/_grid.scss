@@ -1,0 +1,204 @@
+/*
+ * author: houhongru@baidu.com
+ */
+
+@import '_variables',
+        'mixin';
+
+/*
+栅格系统
+
+”栅格“系统通过定义`row`和`col`，实现了将页面在垂直方向上分隔的方法。
+
+Styleguide 3
+*/
+
+/*
+行
+
+类名：`row`<br>
+
+带有row类的元素将使内部元素会呈现在同一行上。所有子元素采用浮动列模式，即所有子元素有等分的宽度
+
+参数：
+
+在子元素添加`-col-auto`类， 可以使子元素使用默认宽，不自动等宽。
+
+Markup:
+<div id="example-2-1">
+    <div class="container">
+        <div class="row">
+            <p class="-bg-light">Column 1 </p>
+            <p class="-bg-brand">Column 2</p>
+            <p class="-bg-darker -ft-fifth">Column 3 </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="-bg-light">Column 1 </p>
+            <p class="-bg-brand">Column 2</p>
+            <p class="-bg-darker -col-auto -ft-fifth">Auto-width Column 3 </p>
+    </div>
+    </div>
+</div>
+
+Styleguide 3.1
+*/
+
+.row {
+    width: 100%;
+    -webkit-box-align: center;
+    display: -webkit-box !important;    // iOS/Android
+
+    display: -webkit-flex !important;   // Chrome
+    -webkit-align-items: center;
+    & > * {
+        display: block !important;
+        -webkit-box-flex: 1;            // iOS/Android
+        -webkit-flex: 1;                // Chrome
+    }
+
+    & > .-col-auto {
+        display: block !important;
+        -webkit-box-flex: 0;            // iOS/Android
+        -webkit-flex: 0 0 auto;         // Chrome
+    }
+    &.-icon, & .-icon {
+        position: relative;
+        &:after {
+            content: "\e60d";
+            font-family: "mwa";
+            position: absolute;
+            color: $-ft-fifth;
+            font-size: $-ft-small;
+            top: 50%;
+            right: 0;
+            margin-top: -0.5em;
+        }
+    }
+    &.-icon-mark, & .-icon-mark {
+        position: relative;
+        &:after {
+            content: "\e608";
+            font-family: "mwa";
+            position: absolute;
+            color: $-ft-fifth;
+            font-size: $-ft-small;
+            top: 50%;
+            right: 0;
+            margin-top: -0.5em;
+        }
+    }
+}
+
+@for $i from 1 through $col-num {
+    .-col#{$i} {
+        -webkit-box-flex: 0 !important;            // iOS/Android
+        -webkit-flex: none !important;                // Chrome
+        width: 100% / $col-num * $i !important;
+    }
+}
+
+/*
+固定列模式
+
+栅格同时也支持固定列模式。固定列模式采用#{$col-num}列栅格，将整个宽度按#{$col-num}列划分，通过定义每个元素所占col数表示其所占的宽度。 例如宽度占4列表示占总宽度的1/3 (4/12)。 
+
+全局参数：<br>
+    `-col1` <br>
+    `-col2` (1/6)<br>
+    `-col3` (1/4)<br>
+    `-col4` (1/3)<br>
+    `-col5` <br>
+    `-col6` (1/2)<br>
+    `-col7` <br>
+    `-col8` (2/3)<br>
+    `-col9` (3/4)<br>
+    `-col10` (5/6)<br>
+    `-col11` <br>
+    `-col12` (100%)
+
+
+Markup:
+<div id="example-2-2">
+    <div class="row -icon-mark">
+        <p class="-col1">-col1</p>
+        <p class="-col11">-col11</p>
+    </div>
+    <div class="row">
+        <p class="-col2 -icon-mark">-col2 (1/6)</p>
+        <p class="-col10">-col10 (5/6)</p>
+    </div>
+    <div class="row">
+        <p class="-col3 -icon">-col3 (1/4)</p>
+        <p class="-col9">-col9 (3/4)</p>
+    </div>
+    <div class="row">
+        <p class="-col4">-col4 (1/3)</p>
+        <p class="-col8">-col8 (2/3)</p>
+    </div>
+    <div class="row">
+        <p class="-col5">-col5</p>
+        <p class="-col7">-col7</p>
+    </div>
+    <div class="row">
+        <p class="-col6">-col6 (1/2)</p>
+        <p class="-col6">-col6 (1/2)</p>
+    </div>
+    <div class="row">
+        <p class="-col12">-col12 (100%)</p>
+    </div>
+</div>
+
+Styleguide 3.2
+*/
+
+/*
+混合模式
+
+浮动列模式可以和固定列模式混合使用，如下例子所示：
+
+Markup:
+<div id="example-2-3">
+    <div class="row">
+        <div class="-col6">
+           <p>1/2</p>
+        </div>
+        <div class="-col4">
+           <p>1/3</p>
+        </div>
+        <div>
+            <p>Auto</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="-col4">
+           <p>1/3</p>
+        </div>
+        <div>
+            <p>Auto</p>
+        </div>
+        <div class="-col3">
+           <p>1/4</p>
+        </div>
+    </div>
+</div>
+
+Styleguide 3.3
+*/
+
+
+/*
+等宽浮动行
+
+类名 `flex-row`
+
+@deprecated `row`已经实现等宽浮动行
+
+Styleguide 3.4
+*/
+
+.flex-row {
+    @extend .row;
+}
+

@@ -1,0 +1,108 @@
+@import 'variables',
+        'mixin';
+/*
+Tab
+
+类名：`tab`
+
+只支持 `<ul>/<li>/<a>` 的结构
+
+Styleguide 7
+*/
+
+/*
+
+Tab样式
+
+`默认`  Tab用于切换整个页面的样式
+
+`-secondary`  Tab用于切换局部元素的样式
+
+Markup:
+<div class="-bg-normal -spacing-large">
+    <ul class="tab -spacing-base">
+        <li><a href="#"><i class="icon -marker"></i> 地图</a></li>
+        <li class="active"><a href="#"><i class="icon -place"></i> 周边</a></li>
+        <li><a href="#"><i class="icon -route"></i> 路线</a></li>
+    </ul>
+</div>
+<div class="container">
+    <ul class="tab -secondary -bg-normal -spacing-base">
+        <li class="active"><a href="#">较快捷</a></li>
+        <li><a href="#">少步行</a></li>
+        <li><a href="#">少换乘</a></li>
+        <li><a href="#">不坐地铁</a></li>
+    </ul>
+</div>
+<div class="container">
+    <ul class="tab -secondary -bg-normal -spacing-base">
+        <li><a href="#">较快捷</a></li>
+        <li class="active"><a href="#">少步行</a></li>
+        <li><a href="#">少换乘</a></li>
+        <li><a href="#">不坐地铁</a></li>
+    </ul>
+</div>
+<div class="container">
+    <ul class="tab -secondary -bg-normal">
+        <li><a href="#">较快捷</a></li>
+        <li><a href="#">少步行</a></li>
+        <li><a href="#">少换乘</a></li>
+        <li class="active"><a href="#">不坐地铁</a></li>
+    </ul>
+</div>
+
+Styleguide 7.1
+*/
+
+ul.tab {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    &>li {
+        display: table-cell;
+        position: relative;
+        border-bottom: $border-default solid 1px;
+        font-size: $-ft-middle;
+        text-align: center;
+        line-height: 1;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            height: 16px;
+            width: 1px;
+            background-color: #d4d4d4;
+            top: 50%;
+            margin-top: -0.5em;
+        }
+        &.active {
+            border-bottom: none;
+            color: $-ft-brand;
+            background-color: #d1dcef;
+            &:before, &+li:before {
+                width:0;
+                height:0;
+            }
+        }
+        &:first-child {
+            &:before {
+                width: 0;
+            }
+        }
+
+        & > a {
+            height: 50px;
+            display: block;
+            &:active {
+                background-color: #d1dcef;
+            }
+            @include vertical-center;
+            &:before {
+                margin-top: 0.3em;
+            }
+        }
+    }
+}

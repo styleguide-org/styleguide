@@ -1,0 +1,48 @@
+/*
+表格
+
+尚未完工，敬请期待
+
+Styleguide 9
+*/
+
+/*
+
+  表格颜色
+
+Markup:
+<div class="card">
+    <table class="table">
+        <tr>
+            <td rowspan="3">餐饮</td>
+            <td><a href="#">中餐</a></td>
+            <td><a href="#">中餐</a></td>
+        </tr>
+        <tr>
+            <td>中餐</td>
+            <td>中餐</td>
+        </tr>
+        <tr>
+            <td>中餐</td>
+            <td>中餐</td>
+        </tr>
+    </table>
+</div>
+
+Styleguide 9.1
+*/
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr {
+        th,td {
+            padding: $space-small-vertical $space-small-horizontal;
+            border: $line-default;
+            vertical-align: top;
+            text-align: center;
+            line-height: 1.4;
+        }
+    }
+}

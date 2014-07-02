@@ -1,0 +1,222 @@
+/*
+ * Style Guide ��(7h
+ */
+.kss-modifier-example #example-1-1 div, .kss-modifier-example #example-1-2 div, .kss-modifier-example #example-1-3 div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 10px; }
+  .kss-modifier-example #example-1-1 div p, .kss-modifier-example #example-1-2 div p, .kss-modifier-example #example-1-3 div p {
+    position: relative;
+    top: 105px;
+    left: 18px;
+    font-family: Consolas, monaco, monospace; }
+.kss-modifier-example #example-1-2, .kss-modifier-example #example-1-3 {
+  display: table-cell;
+  width: 224px;
+  height: 130px;
+  background: url('../../styleguide/assets/map.png'); }
+  .kss-modifier-example #example-1-2 div, .kss-modifier-example #example-1-3 div {
+    border: none; }
+.kss-modifier-example #example-1-6 p {
+  font-family: Consolas, monaco, monospace; }
+.kss-modifier-example #example-1-6 .-ft-fifth {
+  background-color: #000; }
+.kss-modifier-example #example-2-1 p, .kss-modifier-example #example-2-2 p, .kss-modifier-example #example-2-3 p {
+  height: 44px;
+  line-height: 44px;
+  background-color: #6bb1f7;
+  margin-bottom: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0;
+  text-align: center; }
+.kss-modifier-example #example-3-1 .btn, .kss-modifier-example #example-3-2 .btn {
+  margin-right: 5px;
+  margin-bottom: 5px; }
+.kss-modifier-example #example-7-3 {
+  width: 320px;
+  text-align: center; }
+  .kss-modifier-example #example-7-3 .nearby {
+    vertical-align: middle;
+    height: 300px; }
+.kss-modifier-example #example-8-1 .list-group {
+  margin-bottom: 10px; }
+.kss-modifier-example #example-8-3 {
+  width: 320px;
+  font-size: 14px; }
+.kss-modifier-example #example-5-2, .kss-modifier-example #example-7-4, .kss-modifier-example .example-11 {
+  width: 320px; }
+  .kss-modifier-example #example-5-2 .nearby-icon, .kss-modifier-example #example-7-4 .nearby-icon, .kss-modifier-example .example-11 .nearby-icon {
+    background: url(http://s1.map.bdimg.com/mobile/simple/static/index/images/index-nb-pic_55dd6a0.png) no-repeat 0 0;
+    height: 54px;
+    width: 53px;
+    background-size: 52px 841px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-canyin, .kss-modifier-example #example-7-4 .nearby-icon.ui3-canyin, .kss-modifier-example .example-11 .nearby-icon.ui3-canyin {
+      background-position: 1px 2px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-hotel, .kss-modifier-example #example-7-4 .nearby-icon.ui3-hotel, .kss-modifier-example .example-11 .nearby-icon.ui3-hotel {
+      background-position: 1px -53px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-movie, .kss-modifier-example #example-7-4 .nearby-icon.ui3-movie, .kss-modifier-example .example-11 .nearby-icon.ui3-movie {
+      background-position: 1px -108px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-bus, .kss-modifier-example #example-7-4 .nearby-icon.ui3-bus, .kss-modifier-example .example-11 .nearby-icon.ui3-bus {
+      background-position: 1px -165px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-subway, .kss-modifier-example #example-7-4 .nearby-icon.ui3-subway, .kss-modifier-example .example-11 .nearby-icon.ui3-subway {
+      background-position: 1px -222px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-sale, .kss-modifier-example #example-7-4 .nearby-icon.ui3-sale, .kss-modifier-example .example-11 .nearby-icon.ui3-sale {
+      background-position: 1px -278px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-streetview, .kss-modifier-example #example-7-4 .nearby-icon.ui3-streetview, .kss-modifier-example .example-11 .nearby-icon.ui3-streetview {
+      background-position: 1px -335px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.ui3-taxi, .kss-modifier-example #example-7-4 .nearby-icon.ui3-taxi, .kss-modifier-example .example-11 .nearby-icon.ui3-taxi {
+      background-position: 1px -730px; }
+    .kss-modifier-example #example-5-2 .nearby-icon.newui_1_nb, .kss-modifier-example #example-7-4 .nearby-icon.newui_1_nb, .kss-modifier-example .example-11 .nearby-icon.newui_1_nb {
+      background-position: 1px -392px; }
+.kss-modifier-example #example-10 .popover {
+  margin-right: 20px;
+  margin-bottom: 20px; }
+.kss-modifier-example i.img-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-style: normal;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 12px; }
+  .kss-modifier-example i.img-icon.start-point {
+    background-color: #62B211; }
+  .kss-modifier-example i.img-icon.end-point {
+    background-color: #F50; }
+  .kss-modifier-example i.img-icon.back {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbBJREFUeNpizMwrYSADsANxFxAnATETEC8B4gIg/k6qQSzkWM7ExLTx379/7khiaSzMzCx//v5NJtUwJipYDgNx5AQlE5UsZ2BmYWGmpQPwWg4CZiZGv2nlAIKWa2mqMwQH+M6lhQOIsjwtKX4XGxtrAbUdQIrlfln5pb+o6QBSLf/JQCZgGkjLsTmArpajO4DuliM7YEAsBwFGYGXECbR8PT7LqQw+APFiIAbVgr+YgJXIFDpaDgICQJzLzMzcDouCOIYBAExMjDkQmpmJZSAcwMLCwgp2gKmx0Z+BcICVhRm45GQK8vdZBErh9ALcXFwMTg62DL5e7lPAIcHJyZEDzF4ys+YtdLt2/SZOjdpaGgzpyfGgoKPUDe+AeBEQV8GyIcO0id3sv3793kTIEcDsuhOYY/yBTKqVA+CCCFSwgAoYUEGDLzpA2RVUYEEbpdRzwEA6AqUyGghHYFTH9HYE1gYJPR2Bs0lGoiM2AZlsVG+UkuAIN2Dl0k+TZjmxjmBkZEyhWceEGEcAHcBK064ZIUeYGhv8pXXfEMURrs4ODOzs7PDKJSTQbwk5DgAIMACqPOUcF+B9cAAAAABJRU5ErkJggg==") no-repeat;
+    background-size: 16px 16px; }
+  .kss-modifier-example i.img-icon.bus {
+    background: url(http://s1.map.bdimg.com/mobile/simple/static/common/images/lineIcon_251e24f.png) no-repeat;
+    background-size: 20px 245px;
+    background-position: 0 -176px; }
+  .kss-modifier-example i.img-icon.drive {
+    background: url(http://s1.map.bdimg.com/mobile/simple/static/common/images/lineIcon_251e24f.png) no-repeat;
+    background-size: 20px 245px;
+    background-position: 0 -79px; }
+  .kss-modifier-example i.img-icon.walk {
+    background: url(http://s1.map.bdimg.com/mobile/simple/static/common/images/lineIcon_251e24f.png) no-repeat;
+    background-size: 20px 245px;
+    background-position: 0 -103px; }
+.kss-modifier-example .example-11 .common-widget-bottom-banner {
+  width: 100%;
+  height: 55px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 55px;
+  position: relative; }
+.kss-modifier-example .example-11 .common-widget-nav {
+  height: 50px;
+  position: relative;
+  border-bottom: #d7d8d9 solid 1px;
+  text-align: center; }
+  .kss-modifier-example .example-11 .common-widget-nav:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; }
+  .kss-modifier-example .example-11 .common-widget-nav .btn {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 14px; }
+  .kss-modifier-example .example-11 .common-widget-nav .traffic-icons, .kss-modifier-example .example-11 .common-widget-nav .nav-center {
+    display: inline-block; }
+    .kss-modifier-example .example-11 .common-widget-nav .traffic-icons a, .kss-modifier-example .example-11 .common-widget-nav .nav-center a {
+      padding-right: 20px;
+      display: inline-block; }
+      .kss-modifier-example .example-11 .common-widget-nav .traffic-icons a:last-child, .kss-modifier-example .example-11 .common-widget-nav .nav-center a:last-child {
+        padding-right: 0; }
+.kss-modifier-example .example-11 .bus-list-info {
+  padding-left: 24px; }
+  .kss-modifier-example .example-11 .bus-list-info .list-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 6px;
+    height: 20px;
+    width: 20px;
+    color: #0c4da8;
+    background: #e3f1fa;
+    border-radius: 12px; }
+.kss-modifier-example .example-11 .addr-page .start-list {
+  padding: 10px;
+  padding-left: 30px;
+  margin-bottom: 6px;
+  background-color: #3677D3; }
+.kss-modifier-example .example-11 .addr-page .end-list {
+  padding: 10px;
+  padding-left: 30px;
+  background-color: #f9914c; }
+.kss-modifier-example .example-11 .addr-page .start-list, .kss-modifier-example .example-11 .addr-page .end-list, .kss-modifier-example .example-11 .addr-page .addr-list {
+  position: relative; }
+  .kss-modifier-example .example-11 .addr-page .start-list .img-icon, .kss-modifier-example .example-11 .addr-page .end-list .img-icon, .kss-modifier-example .example-11 .addr-page .addr-list .img-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 6px;
+    height: 25px;
+    width: 20px;
+    background: url(http://s1.map.bdimg.com/mobile/simple/static/addr/images/marker_bg_8fa36fb.png) 0 0 no-repeat;
+    background-size: 57px 24px; }
+    .kss-modifier-example .example-11 .addr-page .start-list .img-icon.start-addr, .kss-modifier-example .example-11 .addr-page .end-list .img-icon.start-addr, .kss-modifier-example .example-11 .addr-page .addr-list .img-icon.start-addr {
+      background-position: -38px 0; }
+    .kss-modifier-example .example-11 .addr-page .start-list .img-icon.end-addr, .kss-modifier-example .example-11 .addr-page .end-list .img-icon.end-addr, .kss-modifier-example .example-11 .addr-page .addr-list .img-icon.end-addr {
+      background-position: -18px 0; }
+    .kss-modifier-example .example-11 .addr-page .start-list .img-icon.icon-addr, .kss-modifier-example .example-11 .addr-page .end-list .img-icon.icon-addr, .kss-modifier-example .example-11 .addr-page .addr-list .img-icon.icon-addr {
+      background-size: 18px 25px;
+      background-image: url(http://s1.map.bdimg.com/mobile/simple/static/addr/images/gohere_new_1416355.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      font-weight: bold;
+      font-style: normal;
+      color: #fff; }
+.kss-modifier-example .example-11 .addr-page .addr-list {
+  padding-left: 25px; }
+  .kss-modifier-example .example-11 .addr-page .addr-list p {
+    margin: 0px; }
+.kss-modifier-example .example-11 .index-widget-cater .v-row:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  float: left; }
+.kss-modifier-example .example-11 .index-widget-cater .v-row .v-center {
+  display: inline-block;
+  vertical-align: middle; }
+.kss-modifier-example .example-11 .star-box {
+  display: inline-block;
+  height: 15px;
+  width: 75px;
+  background: url(http://s1.map.bdimg.com/mobile/simple/static/common/images/new_star_a9ede79.png) repeat-x 0 0;
+  background-size: 15px 33px;
+  font-size: 14px;
+  vertical-align: middle;
+  display: inline-block; }
+  .kss-modifier-example .example-11 .star-box .star-score {
+    display: inline-block;
+    height: 15px;
+    background: url(http://s1.map.bdimg.com/mobile/simple/static/common/images/new_star_a9ede79.png) repeat-x 0 -19px;
+    background-size: 15px 33px; }
+.kss-modifier-example .example-11 .index-widget-bank .ibank {
+  width: 29px;
+  height: 29px;
+  background: url(http://s1.map.bdimg.com/mobile/simple/static/index/images/npush-icon-new_2e0dd34.png) no-repeat;
+  background-size: 32px 340px; }
+  .kss-modifier-example .example-11 .index-widget-bank .ibank.icbc {
+    background-position: 1px -157px; }
+  .kss-modifier-example .example-11 .index-widget-bank .ibank.abc {
+    background-position: 1px -187px; }
+  .kss-modifier-example .example-11 .index-widget-bank .ibank.cbc {
+    background-position: 1px -248px; }
+  .kss-modifier-example .example-11 .index-widget-bank .ibank.boc {
+    background-position: 1px -220px; }
+  .kss-modifier-example .example-11 .index-widget-bank .ibank.atm {
+    background-position: 1px -278px; }

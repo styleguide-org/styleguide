@@ -1,0 +1,242 @@
+/*
+ * author: houhongru@baidu.com
+ */
+
+@import '_variables';
+
+
+/*
+表单
+
+Styleguide 5
+*/
+
+/*
+input text
+
+类名：`input-text`<br><br>
+可选参数：<br>
+
+1. 结构参数：<br>
+    `-icon` 输入框内带有左icon, 留出左部空白<br>
+
+2. 边框颜色参数：<br>
+    `-brand` 百度色边框<br>
+    `-alert` 提示色边框
+
+Markup:
+<div id="example-4-1">
+    <div class="container">
+        <div class="input-text -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -brand -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -alert -spacing-base"><input type="text" placeholder="Hi there"></div>
+    </div>
+    <div class="container">
+        <div class="input-text -icon -brand -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -icon -alert"><input type="text" placeholder="Hi there"></div>
+    </div>
+</div>
+
+Styleguide 5.1
+*/
+input[type="text"], select {
+    -webkit-border-radius:0;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.input-text {
+    font-size: $-ft-base;
+    border: $line-default;
+    position:relative;
+
+    & input[type="text"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    &.-icon {
+        & > .icon {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 6px;
+            font-size: $-ft-large;
+        }
+        input[type="text"] {
+            padding-left: 30px;
+        }
+    }
+
+    &.-brand {
+        border-color: $-bg-brand;
+    }
+
+    &.-alert {
+        border-color: $-bg-alert;
+    }
+
+}
+
+
+
+/*
+input group
+
+类名：`input-group` 
+
+将输入框、图标和按钮进行组合
+
+图标大小 20X20 px
+
+按钮和输入框等高，为36px
+
+Markup:
+<div id="example-4-2">
+    <div class="container">
+        <div class="input-group">
+            <div class="input-text -icon">
+                <i class="icon -search -ft-brand"></i>
+                <input type="text"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <div class="input-text">
+                <input type="text"></input>
+            </div>
+            <input type="submit" class="btn -brand" value="搜索"></input>
+        </div>
+    </div>
+</div>
+
+Styleguide 5.2
+*/
+
+.input-group {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    .input-text {
+        -webkit-box-flex: 1;
+    }
+    .btn:first-child {
+        border-right: none;
+    }
+    .btn:last-child {
+        border-left: none;
+    }
+
+    .btn,.input-text {
+        height: $height-base + 2;
+    }
+}
+
+/*
+select
+
+类名: `select-box` <br><br>
+
+必须用有该类名的元素包裹select元素
+
+Markup:
+<div id="example-4-3">
+    <div class="container">
+        <div class="select-box">
+        <select name="filter" >
+            <option>全部</option>
+            <option>美食</option>
+            <option>酒店</option>
+        </select>
+        </div>
+    </div>
+    <div class="container row">
+        <div class="select-box -col4">
+        <select name="filter" >
+            <option>全部</option>
+            <option>美食</option>
+            <option>酒店</option>
+        </select>
+        </div>
+    </div>
+</div>
+
+Styleguide 5.3
+*/
+
+.select-box {
+    height: $height-small;
+    font-size: $-ft-base;
+    border: $line-default;
+    display: inline-block;
+    position: relative;
+
+    select {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 3px;
+        background-color: #fff; //fix for android chrome
+    }
+
+    &:after {
+        display: inline-block;
+        font-family: "mwa";
+        content: "\e61b";
+        -webkit-font-smoothing: antialiased;
+        color: $-ft-tertiary;
+        position: absolute;
+        font-size: 12px;
+        right: 3px;
+        top: 50%;
+        margin-top: -8px;
+        pointer-events:none;
+    }
+
+}
+
+/*
+label
+
+类名 `wa-label`
+
+Markup:
+<div id="example-4-4">
+    <div class="container">
+        <span class="wa-label -small -bg-alert">1</span>
+        <span class="wa-label">2</span>
+        <span class="wa-label -bg-brand">LBS</span>
+        <span class="wa-label -large -bg-brand">Webapp</span>
+    </div>
+</div>
+
+Styleguide 5.4 
+*/
+.wa-label {
+    padding: 0 4px;
+    height: 24px;
+    line-height: 24px;
+    min-width: 24px;
+    border-radius: 2px;
+    color: $-ft-lighter;
+    background-color: $-bg-dark;
+    display: inline-block;
+    text-align: center;
+
+    &.-small {
+        padding: 0 2px;
+        height: 16px;
+        line-height: 16px;
+        min-width: 16px;
+    }
+
+    &.-large {
+        padding: 0 8px;
+        height: 30px;
+        line-height: 30px;
+        min-width: 30px;
+    }
+}

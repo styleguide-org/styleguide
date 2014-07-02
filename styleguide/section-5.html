@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Webapp Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="../src/doc/sg.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper styleguide">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Waimai Webapp Style Guide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="5">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">首页</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">基本样式</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">容器</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">栅格系统</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">按钮</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">表单</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">缩略图</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Tab</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">列表</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">表格</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">弹出框</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">图标</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-21.html"><span class="kss-ref">21</span><span class="kss-name">示例</span></a></li>
+              
+              <li class="kss-menu-item"><a href="icons/demo.html"><span class="kss-ref">#</span><span class="kss-name">图标列表</span></a></li>
+            </ul>
+            
+            <ul class="kss-menu-child">
+              
+              
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-5.1"><span class="kss-ref">5.1</span><span class="kss-name">input text</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-5.2"><span class="kss-ref">5.2</span><span class="kss-name">input group</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-5.3"><span class="kss-ref">5.3</span><span class="kss-name">select</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-5.4"><span class="kss-ref">5.4</span><span class="kss-name">label</span></a></li>
+              
+              
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          
+          
+          <section id="section-5" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">5</span> 表单</h1>
+            
+            
+            
+          </section>
+          
+          <section id="section-5.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.1</span> input text</h1>
+            
+            
+            <div class="kss-description">
+              <p>类名：<code>input-text</code><br><br>
+可选参数：<br>
+
+</p>
+<ol>
+<li><p>结构参数：<br>
+ <code>-icon</code> 输入框内带有左icon, 留出左部空白<br></p>
+</li>
+<li><p>边框颜色参数：<br>
+ <code>-brand</code> 百度色边框<br>
+ <code>-alert</code> 提示色边框</p>
+</li>
+</ol>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-4-1">
+    <div class="container">
+        <div class="input-text -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -brand -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -alert -spacing-base"><input type="text" placeholder="Hi there"></div>
+    </div>
+    <div class="container">
+        <div class="input-text -icon -brand -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -icon -alert"><input type="text" placeholder="Hi there"></div>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-4-1&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;input-text -spacing-base&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Hi there&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;input-text -brand -spacing-base&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Hi there&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;input-text -alert -spacing-base&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Hi there&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;input-text -icon -brand -spacing-base&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Hi there&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;input-text -icon -alert&quot;&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Hi there&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-5.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.2</span> input group</h1>
+            
+            
+            <div class="kss-description">
+              <p>类名：<code>input-group</code> 
+
+</p>
+<p>将输入框、图标和按钮进行组合
+
+</p>
+<p>图标大小 20X20 px
+
+</p>
+<p>按钮和输入框等高，为36px</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-4-2">
+    <div class="container">
+        <div class="input-group">
+            <div class="input-text -icon">
+                <i class="icon -search -ft-brand"></i>
+                <input type="text"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <div class="input-text">
+                <input type="text"></input>
+            </div>
+            <input type="submit" class="btn -brand" value="搜索"></input>
+        </div>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-4-2&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;input-group&quot;&gt;
+            &lt;div class=&quot;input-text -icon&quot;&gt;
+                &lt;i class=&quot;icon -search -ft-brand&quot;&gt;&lt;/i&gt;
+                &lt;input type=&quot;text&quot;&gt;&lt;/input&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;input-group&quot;&gt;
+            &lt;div class=&quot;input-text&quot;&gt;
+                &lt;input type=&quot;text&quot;&gt;&lt;/input&gt;
+            &lt;/div&gt;
+            &lt;input type=&quot;submit&quot; class=&quot;btn -brand&quot; value=&quot;搜索&quot;&gt;&lt;/input&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-5.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.3</span> select</h1>
+            
+            
+            <div class="kss-description">
+              <p>类名: <code>select-box</code> <br><br>
+
+</p>
+<p>必须用有该类名的元素包裹select元素</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-4-3">
+    <div class="container">
+        <div class="select-box">
+        <select name="filter" >
+            <option>全部</option>
+            <option>美食</option>
+            <option>酒店</option>
+        </select>
+        </div>
+    </div>
+    <div class="container row">
+        <div class="select-box -col4">
+        <select name="filter" >
+            <option>全部</option>
+            <option>美食</option>
+            <option>酒店</option>
+        </select>
+        </div>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-4-3&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;select-box&quot;&gt;
+        &lt;select name=&quot;filter&quot; &gt;
+            &lt;option&gt;全部&lt;/option&gt;
+            &lt;option&gt;美食&lt;/option&gt;
+            &lt;option&gt;酒店&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container row&quot;&gt;
+        &lt;div class=&quot;select-box -col4&quot;&gt;
+        &lt;select name=&quot;filter&quot; &gt;
+            &lt;option&gt;全部&lt;/option&gt;
+            &lt;option&gt;美食&lt;/option&gt;
+            &lt;option&gt;酒店&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-5.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">5.4</span> label</h1>
+            
+            
+            <div class="kss-description">
+              <p>类名 <code>wa-label</code></p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-4-4">
+    <div class="container">
+        <span class="wa-label -small -bg-alert">1</span>
+        <span class="wa-label">2</span>
+        <span class="wa-label -bg-brand">LBS</span>
+        <span class="wa-label -large -bg-brand">Webapp</span>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-4-4&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;span class=&quot;wa-label -small -bg-alert&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;wa-label&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;wa-label -bg-brand&quot;&gt;LBS&lt;/span&gt;
+        &lt;span class=&quot;wa-label -large -bg-brand&quot;&gt;Webapp&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

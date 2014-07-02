@@ -1,0 +1,118 @@
+/*
+ * author: houhongru@baidu.com
+ */
+
+@import 'variables',
+        'mixin';
+
+/*
+弹出框
+
+Styleguide 10
+*/
+
+
+/*
+弹出框
+
+类名：`popover`<br><br>
+可选参数：<br>
+
+1. 背景颜色参数：<br>
+    `-dark` 暗色系<br>
+
+2. 箭头指向参数：<br>
+    `-top-angle` 向上箭头<br>
+    `-bottom-angle` 向下箭头
+
+Markup:
+<div id="example-10" class="container -normal">
+    <div class="row -spacing-base">
+        <div class="popover -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -top-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -bottom-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="popover -dark -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -dark -top-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -dark -bottom-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+    </div>
+</div>
+
+Styleguide 10.1
+*/
+
+.popover {
+    @include clearfix;
+    position: relative;
+
+    .content {
+        @include clearfix;
+        box-shadow: $shadow-dialog;
+        color: $-ft-primary;
+        background-color: $-bg-lighter;
+        padding: $space-base-vertical $space-base-horizontal;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    &.-top-angle {
+        .angle {
+            @include angle($bg-color: $-bg-lighter,
+                       $solid-border: bottom,
+                       $trans-border-1: left,
+                       $trans-border-2: right,
+                       $top: -10px,
+                       $left: -8px,
+                       $margin-left: 50%);
+        }
+    }
+    &.-bottom-angle {
+        .angle {
+            @include angle($bg-color: $-bg-lighter,
+                       $solid-border: top,
+                       $trans-border-1: left,
+                       $trans-border-2: right,
+                       $top: 100%,
+                       $left: -8px,
+                       $margin-left: 50%);
+        }
+
+    }
+
+    &.-dark {
+        @include popover-color($-bg-darker, $-ft-lighter);
+    }
+}
+

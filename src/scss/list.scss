@@ -1,0 +1,128 @@
+@import 'variables',
+        'mixin';
+/*
+列表
+
+只支持`<ul>/<li>/<a>`元素格式
+
+Styleguide 8
+*/
+
+/*
+
+列表样式
+
+`默认` 
+
+可选参数：
+
+`-large` 增大padding
+
+`-icon` 加上箭头图标
+
+Markup:
+<div class="example-8-1">
+    <div class="container">
+    <ul class="list-group">
+        <li>
+            <a>linked list item 1</a>
+        </li>
+        <li>
+            <a>linked list item 2</a>
+        </li>
+    </ul>
+    </div>
+    <div class="container">
+    <ul class="list-group -large -icon">
+        <li>
+            <a>linked list item 1</a>
+        </li>
+        <li>
+            <a>linked list item 2</a>
+        </li>
+    </ul>
+    </div>
+</div>
+
+Styleguide 8.1
+*/
+
+ul.list-group {
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    @include border();
+
+    & > li {
+        position: relative;
+        padding: 0 $space-base-horizontal;  
+        
+        &:active {
+            background-color: darken($-bg-lighter, 5%);
+        }
+
+        & > a {
+            border-bottom: $line-default;
+            display: block;
+            padding: $space-base-vertical $space-base-horizontal;
+        }
+        &:last-child > a {
+            border-bottom: none;
+        }
+    }
+
+    &.-large > li > a {
+        padding: $space-large-vertical $space-base-horizontal;
+    }
+
+    &.-icon > li {
+        position: relative;
+        &:after {
+            content: "\e60d";
+            font-family: "mwa";
+            position: absolute;
+            color: $-ft-fifth;
+            font-size: $-ft-small;
+            top: 50%;
+            right: 10px;
+            margin-top: -0.5em;
+        }
+    }
+}
+
+/*
+
+示例
+
+Markup:
+<div id="example-8-3" class="card">
+    <ul class="list-group">
+        <li>
+            <a>
+                <span>
+                    717路 > 地铁1号线 <br>
+                    18:09到达, 约1小时50分钟/22.6公里
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span>
+                    地铁13号线 > 地铁2号线 > 地铁1号线 <br>
+                    18:06到达，约1小时40分钟/23.5公里
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span>
+                    717路 > 地铁1号线 <br>
+                    18:09到达, 约1小时50分钟/22.6公里
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+Styleguide 8.3
+*/

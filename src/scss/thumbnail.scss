@@ -1,0 +1,118 @@
+@import 'variables';
+/*
+缩略图
+
+Styleguide 6
+*/
+
+/*
+基本样式
+
+类名：`thumbnail`
+
+子元素部分：
+
+标签`<img>` 或 类名 `thumb-img` ：图像部分
+
+类名`caption` ；标题部分
+
+Markup:
+<div id="example-5-1 card">
+<div class="row">
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+</div>
+
+Styleguide 6.1
+*/
+
+.thumbnail {
+    display: block;
+    padding: 5px;
+    
+    &>img,div.thumb-img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 1px;
+        text-align: center;
+    }
+
+    &>.caption {
+        display: block;
+        padding: 0;
+        margin: 5px auto 0 auto;
+        text-align: center;
+        font-size: $-ft-small;
+    }
+}
+a.thumbnail:active {
+    background-color: darken($-bg-normal, 5%);
+}
+
+/*
+示例
+
+Markup:
+<div id="example-5-2" class="container -normal">
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-canyin"></div>
+            <div class="caption">美食</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-hotel"></div>
+            <div class="caption">酒店</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+            <div class="caption">电影院</div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-bus"></div>
+            <div class="caption">公交车</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-subway"></div>
+            <div class="caption">地铁图</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-sale"></div>
+            <div class="caption">团购</div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-streetview"></div>
+            <div class="caption">全景</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-taxi"></div>
+            <div class="caption">打车</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon newui_1_nb"></div>
+            <div class="caption">随便看看</div>
+        </a>
+    </div>
+</div>
+
+Styleguide 6.2
+*/

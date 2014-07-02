@@ -1,0 +1,257 @@
+/*
+ * author: houhongru@baidu.com
+ */
+
+@import 'variables',
+        'mixin';
+
+/*
+按钮
+
+类名：`btn`<br><br>
+
+以下三种元素在添加 `btn` class 后均显示为按钮，需要同时添加表示宽度的 class：
+
+`<a href="#" class="btn">Link Button</a>`<br>
+`<button class="btn">Button Element</button>`<br>
+`<input type="button" class="btn" value="input button">`
+
+参数：
+
+`-flat` 使用扁平化按钮样式 (无边框）
+
+Styleguide 4
+*/
+
+/*
+按钮大小
+
+可选参数：<br>
+    `-large`（默认值）<br>
+    `-small`<br>
+    `-mini`
+
+Markup:
+<div id="example-3-1">
+    <div class="row">
+        <a href="#" class="btn -col3 {$modifiers}">Link Button</a>
+        <button class="btn -col3 {$modifiers}">Button Element</button>
+        <input type="button" class="btn -col3 {$modifiers}" value="input button"/>
+    </div>
+    <div class="row">
+        <a href="#" class="btn -small -col3 {$modifiers}">Link Button</a>
+        <button class="btn -small -col3 {$modifiers}">Button Element</button>
+        <input type="button" class="btn -small -col3 {$modifiers}" value="input button"/>
+    </div>
+    <div class="row">
+        <a href="#" class="btn -mini {$modifiers}">Link Button</a>
+        <button class="btn -mini {$modifiers}">Button Element</button>
+        <input type="button" class="btn -mini {$modifiers}" value="input button"/>
+    </div>
+    <div class="row">
+        <a href="#" class="btn -flat {$modifiers}">Link Button</a>
+        <button class="btn -flat {$modifiers}">Button Element</button>
+        <input type="button" class="btn -flat {$modifiers}" value="input button"/>
+    </div>
+</div>
+
+:active              - 按下按钮时的效果。
+
+Styleguide 4.1
+*/
+
+/*
+按钮颜色
+
+`默认` 继承父元素
+
+可选参数：<br>
+    `-lighter`（默认值）<br>
+    `-light`<br>
+    `-brand`<br>
+    `-alert`<br>
+
+Markup:
+<div id="example-3-2">
+    <div class="row">
+        <button class="btn -col4 {$modifiers}">Button Element</button>
+    </div>
+    <div class="row">
+        <button class="btn -light -col4 {$modifiers}">Button Element</button>
+    </div>
+    <div class="row">
+        <button class="btn -brand -col4 {$modifiers}">Button Element</button>
+    </div>
+    <div class="row">
+        <button class="btn -alert -col4 {$modifiers}">Button Element</button>
+    </div>
+</div>
+
+:active              - 按下按钮时的效果。
+
+Styleguide 4.2
+*/
+
+.btn {
+    border: $line-default;
+    padding: 0 $space-base-horizontal;
+    color: inherit;
+    background-color: inherit;
+    &:active {
+        background-color: darken($-bg-normal, 5%);
+    }
+
+    // # Options for shape
+    &, &.-large {
+        height: $height-large;
+        min-width: $height-large;
+        font-size: $-ft-middle;
+    }
+
+    &.-small {
+        height: $height-base;
+        min-width: $height-base;
+        font-size: $-ft-base;
+    }
+
+    &.-mini {
+        height: $height-small;
+        min-wdith: $height-small;
+        font-size: $-ft-small;
+        padding: 0 $space-small-horizontal;
+    }
+
+    // # Options for color
+    &.-lighter {
+        color: $-ft-primary;
+        background-color: $-bg-lighter;
+
+        &:active {
+            background-color: darken($-bg-lighter, 5%);
+        }
+    }
+
+    &.-light {
+        color: $-ft-primary;
+        background-color: $-bg-light;
+
+        &:active {
+            background-color: darken($-bg-light, 5%);
+        }
+    }
+
+    &.-brand {
+        color: $-ft-lighter;
+        background-color: $-bg-brand;
+        border-color: $-bg-brand;
+
+        &:active {
+            background-color: darken($-bg-brand, 5%);
+            border-color: darken($-bg-brand, 5%);
+        }
+    }
+
+    &.-alert {
+        color: $-ft-lighter;
+        background-color: $-bg-alert;
+        border-color: $-bg-alert;
+
+        &:active {
+            background-color: darken($-bg-alert, 5%);
+            border-color: darken($-bg-alert, 5%);
+        }
+    }
+    &.-flat {
+        border: none;
+        &:active {
+            background-color: inherit;
+            opacity: 0.2;
+        }
+    }
+
+}
+
+a.btn {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: 0;
+        margin-top: 0.3em;
+    }
+}
+
+
+/*
+按钮组
+
+若要使多个按钮形成按钮组，需要将多个按钮放入名为 `btn-group` 的类中。
+
+类名：`btn-group` （实现与`row`相同）
+
+参数：
+
+`-flat` 使用扁平化按钮样式
+
+Markup:
+<div id="example-3-3">
+    <div class="btn-group -spacing-base">
+        <button class="btn -small">Button 1</button>
+        <button class="btn -small">Button 2</button>
+        <button class="btn -small">Button 3</button>
+    </div>
+    <div class="btn-group -spacing-base">
+        <a class="btn -col4">Button 1</a>
+        <a class="btn -col4">Button 2</a>
+        <a class="btn -col4">Button 3</a>
+    </div>
+    <div class="btn-group -flat">
+        <a class="btn">Button 1</a>
+        <a class="btn">Button 2</a>
+        <a class="btn">Button 3</a>
+    </div>
+</div>
+
+Styleguide 4.3
+*/
+
+.btn-group {
+    @extend .row;
+    .btn:not(:last-child) {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .btn:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    &.-flat {
+        border-top: $line-default;
+        border-bottom: $line-default;
+        .btn {
+            border: none;
+            border-radius: 0;
+            position: relative;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                height: 16px;
+                width: 1px;
+                background-color: #d4d4d4;
+                top: 50%;
+                margin-top: -0.5em;
+            }
+            &:last-child:after {
+                width: 0;
+            }
+        }
+    }
+}

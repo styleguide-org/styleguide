@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?69os4d');
+	src:url('fonts/icomoon.eot?#iefix69os4d') format('embedded-opentype'),
+		url('fonts/icomoon.woff?69os4d') format('woff'),
+		url('fonts/icomoon.ttf?69os4d') format('truetype'),
+		url('fonts/icomoon.svg?69os4d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="-"], [class*=" -"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.-telephone:before {
+	content: "\e600";
+}
+.-start:before {
+	content: "\e601";
+}
+.-search:before {
+	content: "\e602";
+}
+.-profile:before {
+	content: "\e603";
+}
+.-plus:before {
+	content: "\e604";
+}
+.-pic-open:before {
+	content: "\e605";
+}
+.-pic-close:before {
+	content: "\e606";
+}
+.-minus:before {
+	content: "\e607";
+}
+.-mark:before {
+	content: "\e608";
+}
+.-location:before {
+	content: "\e609";
+}
+.-list:before {
+	content: "\e60a";
+}
+.-line-phone:before {
+	content: "\e60b";
+}
+.-gotop:before {
+	content: "\e60c";
+}
+.-forward-arrow:before {
+	content: "\e60d";
+}
+.-end:before {
+	content: "\e60e";
+}
+.-down-angle:before {
+	content: "\e60f";
+}
+.-close:before {
+	content: "\e610";
+}
+.-clock:before {
+	content: "\e611";
+}
+.-circle:before {
+	content: "\e612";
+}
+.-cart:before {
+	content: "\e613";
+}
+.-back-arrow:before {
+	content: "\e614";
+}
+.-address:before {
+	content: "\e615";
+}

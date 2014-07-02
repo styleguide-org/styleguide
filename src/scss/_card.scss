@@ -1,0 +1,207 @@
+@import 'variables',
+        'mixin';
+
+/*
+容器
+
+容器是组成页面布局的基本结构，通过容器将整个页面在横向上分割为各个区块, (下一节的栅格将在纵向上分割区块）。
+
+Markup:
+<div class="example-window -bg-normal" style="width:360px"> 
+    <div class="container -border -light">Nav bar</div>
+    <div class="container -layout main -border">
+        <div class="card -base-h -lighter -spacing-base">
+            <div class="container -large-v -border">search box</div>
+            <div class="container -large-v">buttons</div>
+        </div>
+        <div class="card -large -light" style="height:300px">results body</div>
+    </div>
+    <div class="container -light">footer</div>
+</div>
+
+Styleguide 2
+*/
+
+.card,.container {
+    display: block;
+    overflow: hidden;
+    &.-base {
+        padding: $space-base-vertical $space-base-horizontal;
+    }
+    &.-large {
+        padding: $space-large-vertical $space-base-horizontal;
+    }
+    &.-small-h {
+        padding-left: $space-small-horizontal;
+        padding-right: $space-small-horizontal;
+    }
+    &.-small-v {
+        padding-top: $space-small-vertical;
+        padding-bottom: $space-small-vertical;
+    }
+    &.-base-h {
+        padding-left: $space-base-horizontal;
+        padding-right: $space-base-horizontal;
+    }
+    &.-base-v {
+        padding-top: $space-base-vertical;
+        padding-bottom: $space-base-vertical;
+    }
+    &.-large-h {
+        padding-left: $space-large-horizontal;
+        padding-right: $space-large-horizontal;
+    }
+    &.-large-v {
+        padding-top: $space-large-vertical;
+        padding-bottom: $space-large-vertical;
+    }
+    @include color(-lighter, $-bg-lighter);
+    @include color(-light, $-bg-light);
+    @include color(-normal, $-bg-normal);
+    @include color(-dark, $-bg-dark);
+}
+
+/*
+容器样式
+
+可使用的容器有`card`和`container`两种基本容器。`card`是在`container` 的基础样式之上增加了border样式
+
+类名：`container`
+
+`默认`
+
+可选参数：
+
+`-base` -base-h + -base-v
+
+`-large` -large-v + -base-h
+
+`-small-h` 减少左右padding
+
+`-small-v` 减少上下padding
+
+`-base-h` 正常左右padding
+
+`-base-v` 正常上下padding
+
+`-large-h` 增加左右padding
+
+`-large-v` 增加上下padding
+
+`-border` 添加border-bottom
+
+`-layout` 添加布局样式 -small-h + margin 上下为10px
+
+Markup:
+<div id="example-7-1" style="width:360px">
+    <div class="container -light">
+        <div class="container -lighter ">normal container</div>
+        <div class="container -light -base"> -base</div>
+        <div class="container -light -large"> -large</div>
+        <div class="container -normal -small-v -large-h"> -small-v -large-h</div>
+        <div class="container -dark -border"> border container</div>
+    </div>
+</div>
+
+Styleguide 2.1
+*/
+
+/*
+容器颜色
+
+颜色定义和卡片相同
+
+Markup:
+<div id="example-7-4">
+    <div class="container -lighter">lighter container</div>
+    <div class="container -light">light container</div>
+    <div class="container -normal">normal container</div>
+    <div class="container -dark">dark container</div>
+</div>
+
+Styleguide 2.2
+*/
+
+.container {
+
+    &.-border {
+        border-bottom: $line-default;
+    }
+    &.-layout {
+        padding-right: $space-base-horizontal;
+        padding-left: $space-base-horizontal;
+        margin-top: $space-small-vertical;
+        margin-bottom: $space-small-vertical;
+    }
+}
+
+/*
+卡片样式
+
+类名: `card`
+
+可选参数：
+
+`-base` -base-h + -base-h
+
+`-large` -large-v + -base-h
+
+`-small-h` 减少左右padding
+
+`-small-v` 减少上下padding
+
+`-base-h` 正常左右padding
+
+`-base-v` 正常上下padding
+
+`-large-h` 增加左右padding
+
+`-large-v` 增加上下padding
+
+`-layout` 添加布局样式 -base-h + -spacing-base
+
+Markup:
+<div id="example-7-1" style="width:360px">
+    <div class="card -base">
+        <div class="card -light -spacing-base">normal card</div>
+        <div class="card -light -layout"> layout card</div>
+        <div class="card -light -large -spacing-base">large card</div>
+    </div>
+</div>
+
+Styleguide 2.3
+*/
+
+/*
+卡片颜色
+
+`默认` 继承父级元素
+
+可选参数：
+
+`-lighter` <br>
+`-light` <br>
+`-normal` <br>
+`-dark` <br>
+
+Markup:
+<div id="example-7-2" style="width:360px">
+    <div class="card -large -lighter -spacing-base">lighter card</div>
+    <div class="card -large -light -spacing-base">light card</div>
+    <div class="card -large -normal -spacing-base">normal card</div>
+    <div class="card -large -dark">dark card</div>
+</div>
+
+Styleguide 2.4
+*/
+
+.card {
+    @include border($border-round:true);
+    &.-layout {
+        padding-left: $space-base-horizontal;
+        padding-right: $space-base-horizontal;
+        margin-bottom: $space-small-vertical;
+    }
+}
+
+

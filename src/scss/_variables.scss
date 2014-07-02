@@ -1,0 +1,53 @@
+// 背景颜色
+$-bg-lighter: #ffffff;
+$-bg-light: #f7f7f7;
+$-bg-normal: #efefef;
+$-bg-dark: #d5d5d5;
+$-bg-darker: #cccccc;
+$-bg-darkest: #000000;
+$-bg-brand: #6bb1f7;
+$-bg-alert: #ff3a2b;
+
+// 字体颜色
+$-ft-alert: #f55925;
+$-ft-brand: #4c90f9;
+$-ft-primary: #171717;
+$-ft-secondary: #313440;
+$-ft-tertiary: #696e74;
+$-ft-fourth: #919db4;
+$-ft-fifth: #bababa;
+$-ft-sixth: #bdbdbd;
+$-ft-lighter: #ffffff;
+
+// 字体大小
+$-ft-small: 12px;
+$-ft-base: 14px;
+$-ft-middle: 15px;
+$-ft-large: 16px;
+
+// Grid 列数
+$col-num: 12;
+
+// 线条
+$border-default: #d7d8d9;
+$line-default: #d7d8d9 solid 1px;
+$line-inside: #f6f6f6 solid 1px;
+
+// Space
+$space-base-vertical: 10px;
+$space-small-vertical: 5px;
+$space-large-vertical: 15px;
+
+$space-base-horizontal: 10px;
+$space-small-horizontal: 5px;
+$space-large-horizontal: 15px;
+
+//高度
+$height-large: 44px;
+$height-base: 36px;
+$height-small: 30px;
+
+//阴影
+$shadow-card: 0 2px 3px -1px rgba(0, 0, 0, .2) !important;
+$shadow-dialog: 2px 2px 7px rgba(0, 0, 0, .4) !important;
+

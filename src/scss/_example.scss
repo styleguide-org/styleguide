@@ -1,0 +1,558 @@
+/*
+示例
+
+StyleGuide 21
+
+*/
+
+/*
+首页
+
+Markup:
+<div id="example-11-1" class="example-11">
+    <div class="-bg-normal -ft-base">
+        <div id="index-header-widget" class="container -dark">
+            <div class="row">
+                <div class="-col4" style="padding-left:20px">
+                    <button class="btn -mini -light -ft-base">百度</button>
+                </div>
+                <div class="-col4 -ft-large" style="text-align:center;">百度地图</div>
+                <div class="-col4" style="text-align:right;">
+                    <button class="btn -mini -light -ft-base">下载客户端</button>
+                </div>
+            </div>
+        </div>
+        <ul id="index-widget-tabgroup" class="tab">
+            <li><a href="#"><i class="icon -marker"></i> 地图</a></li>
+            <li class="active"><a href="#"><i class="icon -place"></i> 周边</a></li>
+            <li><a href="#"><i class="icon -route"></i> 路线</a></li>
+        </ul>
+        <div id="index-widget-searchbox" class="container -lighter">
+            <div class="input-group">
+                <div class="input-text -brand">
+                    <input type="text" placeholder="搜索地点、公交车、路线" />
+                </div>
+                <input type="button" class="btn -brand" value="搜索" />
+            </div>
+        </div>
+        <div id="index-topbanner-widget" class="container -border">
+            点击打开手机地图，省90%流量
+        </div>
+        <div id="index-widget-nearby" class="container">
+            <div class="row -spacing-base">
+                <a href="#" class="thumbnail -col4">
+                 <div class="thumb-img nearby-icon ui3-canyin"></div>
+                 <div class="caption">美食</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-hotel"></div>
+                    <div class="caption">酒店</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+                    <div class="caption">电影院</div>
+                </a>
+            </div>
+            <div class="row -spacing-base">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-bus"></div>
+                    <div class="caption">公交车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-subway"></div>
+                    <div class="caption">地铁图</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-sale"></div>
+                    <div class="caption">团购</div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-streetview"></div>
+                    <div class="caption">全景</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-taxi"></div>
+                    <div class="caption">打车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon newui_1_nb"></div>
+                    <div class="caption">随便看看</div>
+                </a>
+            </div>
+        </div>
+        <div class="index-widget-thumbnail container">
+            <div class="row locbar -bg-light">
+                <button class="btn -mini -col2" style="font-size:20px"><i class="icon -location -large"></i></button>
+                <span class="-ft-tertiary -col10" style="text-align: center;">北京市海淀区信息路</span>
+            </div>
+        </div>
+        <div id="common-footer-widget" class="btn-group -bg-dark">
+            <button class="btn"><i class="icon -profile"></i> 个人中心</button>
+            <button class="btn"><i class="icon -message"></i> 意见反馈</button>
+            <button class="btn"><i class="icon -recommend"></i> 应用推荐</button>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.1
+*/
+
+/*
+路线页
+
+Markup:
+<div id="example-11-2" class="example-11">
+    <div class="-bg-normal -ft-base">
+        <ul id="index-widget-tabgroup" class="tab">
+            <li><a href="#"><i class="icon -marker"></i> 地图</a></li>
+            <li><a href="#"><i class="icon -place"></i> 周边</a></li>
+            <li class="active"><a href="#"><i class="icon -route"></i> 路线</a></li>
+        </ul>
+        <div id="index-widget-navebox">
+            <div class="container -lighter">
+                <div class="row">
+                <div class="-col2">
+                    <button class="btn -small"><i class="icon -reverse"></i></button>
+                </div>
+                <div class="-col10">
+                    <div class="input-group" style="margin-bottom:6px;">
+                        <div class="input-text -icon">
+                            <i class="icon -start -large" style="color: #62B211"></i>
+                            <input type="text" value="我的位置" />
+                        </div>
+                    </div>
+                    <div class="input-group" >
+                        <div class="input-text -icon">
+                            <i class="icon -end -large" style="color: #F50"></i>
+                            <input type="text" value="我的位置" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="btn-group -bg-light">
+                <button class="btn"><i class="icon -bus -ft-brand"></i> 公交</button>
+                <button class="btn"><i class="icon -drive -ft-brand"></i> 驾车</button>
+                <button class="btn"><i class="icon -walk -ft-brand"></i> 步行</button>
+            </div>
+        </div>
+        <div style="height: 200px">
+        </div>
+        <div class="common-widget-bottom-banner" style="background-image: url(http://map.baidu.com/fwmap/upload/index-groupon-download.png); display: block;">
+        </div>
+        <div id="common-footer-widget" class="btn-group -bg-dark">
+            <button class="btn"><i class="icon -profile"></i> 个人中心</button>
+            <button class="btn"><i class="icon -message"></i> 意见反馈</button>
+            <button class="btn"><i class="icon -recommend"></i> 应用推荐</button>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.2
+*/
+
+/*
+公交方案页
+
+Markup:
+<div id="example-11-3" class="example-11">
+    <div class="-bg-normal -ft-base">
+        <div class="common-widget-nav -bg-lighter">
+            <button class="btn" style="left:0;">
+                <i class="icon -back-arrow -ft-large"></i>
+            </button>
+            <div class="nav-center">
+            <span class="traffic-icons">
+                    <a href="#" ><i class="icon -bus -large -ft-brand" ></i></a>
+                    <a href="#" ><i class="icon -drive -large"></i></a>
+                    <a href="#" ><i class="icon -walk -large"></i></a>
+            </span>
+            </div>
+            <button class="btn -ft-brand" style="right:0">
+                地图
+            </button>
+        </div>
+        <div id="bus-list-wrap">
+        <ul class="tab -secondary">
+            <li class="active"><a href="#">较快捷</a></li>
+            <li><a href="#">少换乘</a></li>
+            <li><a href="#">少步行</a></li>
+        </ul>
+        <div class="container">
+            <div class="row -spacing-base">
+                <div class="-col6" style="padding-left:6px">
+                    <i class="icon -start -ft-large" style="color: #62B211"></i>
+                    我的位置
+                </div>
+                <div class="-col6" style="padding-left:10px">
+                    <i class="icon -end -ft-large" style="color: #F50;"></i>
+                    天安门
+                </div>
+            </div> 
+            <div class="row">
+                <div class="-col6" style="padding-right:4px">
+                    <div class="select-box -col12">
+                        <select name="date-time" value="今天 18:00 出发">
+                            <option>今天 18:00 出发</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="-col6" style="padding-left:4px">
+                    <div class="select-box -col12">
+                        <select name="filter" value="全部">
+                            <option>全部</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-group -bg-lighter -icon">
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">01</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">02</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">03</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">04</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+</div>
+
+Styleguide 21.3
+*/
+
+/*
+地址选择页
+
+Markup:
+<div id="example-11-4" class="example-11">
+    <div class="addr-page -bg-normal -ft-base">
+        <div class="common-widget-nav -bg-lighter">
+            <button class="btn" style="left:0">
+                <i class="icon -back-arrow -ft-large"></i>
+            </button>
+            <div class="nav-center">
+                选择准确的地址
+            </div>
+            <button class="btn -ft-brand" style="right:0">
+                地图
+            </button>
+        </div>
+        <div id="addr-widget-list" class="container">
+            <div class="">
+                <div class="row">
+                    <div class="start-list -col12">
+                        <i class="img-icon start-addr"></i>
+                        起点：西二旗
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="end-list -col9">
+                        <i class="img-icon end-addr"></i>
+                        终点：清河
+                    </div>
+                    <a class="btn -small -col3" style="background:#f9914c">
+                        地图
+                    </a>
+                </div>
+                <ul class="list-group -bg-lighter">
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">A</i>
+                            <div class="addr-info">
+                                <p>清河</p>
+                                <p class="-ft-tertiary -ft-small">北京海淀区</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">B</i>
+                            <div class="addr-info">
+                                <p>清河</p>
+                                <p class="-ft-tertiary -ft-small">北京朝阳区</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">C</i>
+                            <div class="addr-info">
+                                <p>清河（北）</p>
+                                <p class="-ft-tertiary -ft-small">途径公交：618路</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">D</i>
+                            <div class="addr-info">
+                                <p>清河东路</p>
+                                <p class="-ft-tertiary -ft-small">北京市朝阳区</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">E</i>
+                            <div class="addr-info">
+                                <p>清河大桥</p>
+                                <p class="-ft-tertiary -ft-small">北京市海淀区</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            <div>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.4
+*/
+
+
+/*
+随便看看页
+
+Markup:
+<div id="example-11-5" class="example-11">
+    <div class="addr-page -bg-normal -ft-base">
+        <div class="common-widget-nav -bg-lighter">
+            <button class="btn" style="left:0">
+                <i class="icon -back-arrow -ft-large"></i>
+            </button>
+            <div class="nav-center">
+                随便看看
+            </div>
+        </div>
+        <div class="index-widget-cater container">
+            <div class="row -spacing-base">
+                <div class="-col8">
+                    美食
+                </div>
+                <button class="btn -col4 -mini">查看全部</button>
+            </div>
+            <div class="row">
+                <a href="#" class="-col4">
+                    <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D1661204477%2C4084844711%26fm%3D22">
+                    <div class="">
+                        <p>悦东楼</p>
+                        <p class="star-box">
+                            <span class="star-score" style="width:45px;"></span>
+                        </p>
+                        <p>
+                            20 条评论
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="-col4">
+                    <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D1661204477%2C4084844711%26fm%3D22">
+                    <div class="caption">
+                        <p>悦东楼</p>
+                        <p class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </p>
+                        <p>
+                            20 条评论
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="-col4">
+                    <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D1661204477%2C4084844711%26fm%3D22">
+                    <div class="caption">
+                        <p>悦东楼</p>
+                        <p class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </p>
+                        <p>
+                            20 条评论
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="index-widget-cater container">
+            <div class="row -spacing-base">
+                <div class="-col8">
+                    酒店
+                </div>
+                <button class="btn -col4 -mini">查看全部</button>
+            </div>
+            <div class="row">
+                <div class="-col4">
+                    <a class="a-img" href="#">
+                        <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D4101312943%2C279755151%26fm%3D22">
+                    </a>
+                </div>
+                <div class="-col8">
+                    <p>速8酒店（北京立水桥店）</p> 
+                    <p>地址：北京市朝阳区安立路3号3层和1层大堂</p>
+                    <p>
+                        <span class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </span>
+                        <span>
+                            人均：￥136.0
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="-col4">
+                    <a class="a-img" href="#">
+                        <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D4101312943%2C279755151%26fm%3D22">
+                    </a>
+                </div>
+                <div class="-col8">
+                    <p>速8酒店（北京立水桥店）</p> 
+                    <p>地址：北京市朝阳区安立路3号3层和1层大堂</p>
+                    <p>
+                        <span class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </span>
+                        <span>
+                            人均：￥136.0
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="-col4">
+                    <a class="a-img" href="#">
+                        <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D4101312943%2C279755151%26fm%3D22">
+                    </a>
+                </div>
+                <div class="-col8">
+                    <p>速8酒店（北京立水桥店）</p> 
+                    <p>地址：北京市朝阳区安立路3号3层和1层大堂</p>
+                    <p>
+                        <span class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </span>
+                        <span>
+                            人均：￥136.0
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="index-widget-bank container">
+            <div class="row -spacing-base">
+                <div class="-col8">
+                    银行
+                </div>
+                <button class="btn -col4 -mini">查看全部</button>
+            </div>
+            <div style="width:100%; display:table">
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank icbc"></div>
+                <div class="caption">工商银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank abc"></div>
+                <div class="caption">农业银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank cbc"></div>
+                <div class="caption">建设银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank boc"></div>
+                <div class="caption">中国银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank atm"></div>
+                <div class="caption">ATM</div>
+            </a>
+            </div>
+        </div>
+        <div class="index-widget-nearby container">
+            <div class="row -spacing-base">
+                <div class="-col12">
+                    附近
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                 <div class="thumb-img nearby-icon ui3-canyin"></div>
+                 <div class="caption">美食</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-hotel"></div>
+                    <div class="caption">酒店</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+                    <div class="caption">电影院</div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-bus"></div>
+                    <div class="caption">公交车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-subway"></div>
+                    <div class="caption">地铁图</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-sale"></div>
+                    <div class="caption">团购</div>
+                </a>
+            </div>
+            
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-streetview"></div>
+                    <div class="caption">全景</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-taxi"></div>
+                    <div class="caption">打车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon newui_1_nb"></div>
+                    <div class="caption">随便看看</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.5
+*/

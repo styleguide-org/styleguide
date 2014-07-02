@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Webapp Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="../src/doc/sg.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper styleguide">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Waimai Webapp Style Guide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="8">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">首页</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">基本样式</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">容器</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">栅格系统</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">按钮</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">表单</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">缩略图</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Tab</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">列表</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">表格</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">弹出框</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">图标</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-21.html"><span class="kss-ref">21</span><span class="kss-name">示例</span></a></li>
+              
+              <li class="kss-menu-item"><a href="icons/demo.html"><span class="kss-ref">#</span><span class="kss-name">图标列表</span></a></li>
+            </ul>
+            
+            <ul class="kss-menu-child">
+              
+              
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-8.1"><span class="kss-ref">8.1</span><span class="kss-name">列表样式</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-8.3"><span class="kss-ref">8.3</span><span class="kss-name">示例</span></a></li>
+              
+              
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          
+          
+          <section id="section-8" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">8</span> 列表</h1>
+            
+            
+            <div class="kss-description">
+              <p>只支持<code>&lt;ul&gt;/&lt;li&gt;/&lt;a&gt;</code>元素格式</p>
+
+            </div>
+            
+            
+          </section>
+          
+          <section id="section-8.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">8.1</span> 列表样式</h1>
+            
+            
+            <div class="kss-description">
+              <p><code>默认</code> 
+
+</p>
+<p>可选参数：
+
+</p>
+<p><code>-large</code> 增大padding
+
+</p>
+<p><code>-icon</code> 加上箭头图标</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="example-8-1">
+    <div class="container">
+    <ul class="list-group">
+        <li>
+            <a>linked list item 1</a>
+        </li>
+        <li>
+            <a>linked list item 2</a>
+        </li>
+    </ul>
+    </div>
+    <div class="container">
+    <ul class="list-group -large -icon">
+        <li>
+            <a>linked list item 1</a>
+        </li>
+        <li>
+            <a>linked list item 2</a>
+        </li>
+    </ul>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;example-8-1&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+    &lt;ul class=&quot;list-group&quot;&gt;
+        &lt;li&gt;
+            &lt;a&gt;linked list item 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a&gt;linked list item 2&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+    &lt;ul class=&quot;list-group -large -icon&quot;&gt;
+        &lt;li&gt;
+            &lt;a&gt;linked list item 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a&gt;linked list item 2&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-8.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">8.3</span> 示例</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-8-3" class="card">
+    <ul class="list-group">
+        <li>
+            <a>
+                <span>
+                    717路 > 地铁1号线 <br>
+                    18:09到达, 约1小时50分钟/22.6公里
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span>
+                    地铁13号线 > 地铁2号线 > 地铁1号线 <br>
+                    18:06到达，约1小时40分钟/23.5公里
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span>
+                    717路 > 地铁1号线 <br>
+                    18:09到达, 约1小时50分钟/22.6公里
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-8-3&quot; class=&quot;card&quot;&gt;
+    &lt;ul class=&quot;list-group&quot;&gt;
+        &lt;li&gt;
+            &lt;a&gt;
+                &lt;span&gt;
+                    717路 &gt; 地铁1号线 &lt;br&gt;
+                    18:09到达, 约1小时50分钟/22.6公里
+                &lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a&gt;
+                &lt;span&gt;
+                    地铁13号线 &gt; 地铁2号线 &gt; 地铁1号线 &lt;br&gt;
+                    18:06到达，约1小时40分钟/23.5公里
+                &lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a&gt;
+                &lt;span&gt;
+                    717路 &gt; 地铁1号线 &lt;br&gt;
+                    18:09到达, 约1小时50分钟/22.6公里
+                &lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

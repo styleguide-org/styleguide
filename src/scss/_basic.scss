@@ -1,0 +1,345 @@
+/*
+ * 
+ */
+
+@import 'variables';
+@import 'mixin';
+
+/*
+基本样式
+
+Styleguide 1
+*/
+
+body {
+    background: $-bg-normal;
+    color: $-ft-primary;
+    font-size: $-ft-base;
+    font-family: "Heiti SC", "Droid Sans", "Helvetica Neue","Microsoft YaHei", Helvetica, Arial, sans-serif;
+}
+
+p {
+    line-height: 20px;
+}
+
+/*
+背景颜色
+
+全局参数：<br>
+    `-bg-lighter`<br>
+    `-bg-light`<br>
+    `-bg-normal`<br>
+    `-bg-dark`<br>
+    `-bg-darker`<br>
+    `-bg-darkest`<br>
+    `-bg-brand`<br>
+    `-bg-alert`
+
+Markup:
+<div id="example-1-1">
+    <div class="-bg-lighter"><p>#{$-bg-lighter}</p></div>
+    <div class="-bg-light"><p>#{$-bg-light}</p></div>
+    <div class="-bg-normal"><p>#{$-bg-normal}</p></div>
+    <div class="-bg-dark"><p>#{$-bg-dark}</p></div>
+    <div class="-bg-darker"><p>#{$-bg-darker}</p></div>
+    <div class="-bg-darkest"><p>#{$-bg-darkest}</p></div>
+    <div class="-bg-brand"><p>#{$-bg-brand}</p></div>
+    <div class="-bg-alert"><p>#{$-bg-alert}</p></div>
+</div>
+
+Styleguide 1.1
+*/
+
+.-bg-lighter {
+    background-color: $-bg-lighter !important;
+}
+
+.-bg-normal {
+    background-color: $-bg-normal !important;
+}
+
+.-bg-light {
+    background-color: $-bg-light !important;
+}
+
+.-bg-dark {
+    background-color: $-bg-dark !important;
+}
+
+.-bg-darker {
+    background-color: $-bg-darker !important;
+}
+
+.-bg-darkest {
+    background-color: $-bg-darkest !important;
+}
+
+.-bg-brand {
+    background-color: $-bg-brand !important;
+}
+
+.-bg-alert {
+    background-color: $-bg-alert !important;
+}
+
+
+/*
+半透明背景颜色
+
+全局参数：<br>
+    `-bg-transparent`<br>
+
+Markup:
+<div id="example-1-2">
+    <div class="-bg-lighter -bg-transparent"></div>
+    <div class="-bg-darker -bg-transparent"></div>
+</div>
+
+Styleguide 1.2
+*/
+
+.-bg-transparent {
+    opacity: .8 !important;
+}
+
+
+/*
+阴影
+
+阴影包括2种：卡片阴影和对话框阴影。其中卡片阴影方向为正下方；对话框阴影为右下方。
+
+全局参数：<br>
+    `-shadow-card`<br>
+    `-shadow-dialog`
+
+Markup:
+<div id="example-1-3">
+    <div class="-bg-lighter -shadow-card"></div>
+    <div class="-bg-lighter -shadow-dialog"></div>
+</div>
+
+Styleguide 1.3
+*/
+
+.-shadow-card {
+    -webkit-box-shadow: $shadow-card;
+}
+
+.-shadow-dialog {
+    -webkit-box-shadow: $shadow-dialog;
+}
+
+
+/*
+字体样式
+
+FE（RD）无需自定义字体样式，整个 Web app 的字体样式统一为：
+
+    font-family: "Heiti SC", "Droid Sans", Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+Styleguide 1.4
+*/
+
+
+/*
+字体大小
+
+字体大小分为12px、14px、15px 和 16px 四个等级。
+
+全局参数：<br>
+    `-ft-small`<br>
+    `-ft-base`<br>
+    `-ft-middle`<br>
+    `-ft-large`
+
+Markup:
+<div id="example-1-5">
+    <p class="-ft-small">12px（24pt）</p>
+    <p class="-ft-base">14px（28pt）</p>
+    <p class="-ft-middle">15px（30pt）</p>
+    <p class="-ft-large">16px（32pt）</p>
+</div>
+
+Styleguide 1.5
+*/
+
+.-ft-small {
+    font-size: $-ft-small !important;
+}
+
+.-ft-base {
+    font-size: $-ft-base !important;
+}
+
+.-ft-middle {
+    font-size: $-ft-middle !important;
+}
+
+.-ft-large {
+    font-size: $-ft-large !important;
+}
+
+
+/*
+字体颜色
+
+一共包括7种字体颜色。
+
+全局参数：<br>
+    `-ft-alert`<br>
+    `-ft-brand`<br>
+    `-ft-primary`<br>
+    `-ft-secondary`<br>
+    `-ft-tertiary`<br>
+    `-ft-fourth`<br>
+    `-ft-fifth`<br>
+    `-ft-sixth`<br>
+    `-ft-lighter`
+
+Markup:
+<div id="example-1-6">
+    <p class="-ft-alert">#{$-ft-alert}</p>
+    <p class="-ft-brand">#{$-ft-brand}</p>
+    <p class="-ft-primary">#{$-ft-primary}</p>
+    <p class="-ft-secondary">#{$-ft-secondary}</p>
+    <p class="-ft-tertiary">#{$-ft-tertiary}</p>
+    <p class="-ft-fourth">#{$-ft-fourth}</p>
+    <p class="-ft-fifth">#{$-ft-fifth}</p>
+    <p class="-ft-sixth">#{$-ft-sixth}</p>
+    <p class="-ft-lighter">#{$-ft-lighter}</p>
+</div>
+
+Styleguide 1.6
+*/
+
+.-ft-alert {
+    color: $-ft-alert !important;
+}
+
+.-ft-brand {
+    color: $-ft-brand !important;
+}
+
+.-ft-primary {
+    color: $-ft-primary !important;
+}
+
+.-ft-secondary {
+    color: $-ft-secondary !important;
+}
+
+.-ft-tertiary {
+    color: $-ft-tertiary !important;
+}
+
+.-ft-fourth {
+    color: $-ft-fourth !important;
+}
+
+.-ft-fifth {
+    color: $-ft-fifth !important;
+}
+
+.-ft-sixth {
+    color: $-ft-sixth !important;
+}
+
+.-ft-lighter {
+    color: $-ft-lighter !important;
+}
+/*
+垂直间隔
+
+包括三种垂直间隔大小。
+
+全局参数：<br>
+    `-spacing-small` <br>
+    `-spacing-base` <br>
+    `-spacing-large` <br>
+
+Markup:
+<div id="example-1-7" class="container -normal">
+    <div class="card -lighter -spacing-small">
+        spacing small
+    </div>
+    <div class="card -lighter -spacing-base">
+        spacing base
+    </div>
+    <div class="card -lighter -spacing-large">
+        spacing large
+    </div>
+</div>
+
+Styleguide 1.7
+*/
+
+.-spacing-small {
+    margin-bottom: $space-small-vertical !important;
+}
+.-spacing-base {
+    margin-bottom: $space-base-vertical !important;
+}
+.-spacing-large {
+    margin-bottom: $space-large-vertical !important;
+}
+
+/*
+边框
+
+全局参数:
+
+`-border-round` 增加圆角边框
+
+Markup:
+<div class="container">
+    <button class="btn">normal button</button>
+    <button class="btn -border-round">round border button</button>
+</div>
+
+Styleguide 1.8
+*/
+
+.-border-round {
+    @include border-round;
+}
+.-border-alert {
+    border: 1px solid $-ft-alert!important;
+}
+
+/*
+其他
+
+全局参数
+
+`-vcenter` 垂直居中
+
+`-hcenter` 水平居中
+
+`-clearfix` 清除浮动
+
+Markup:
+<div class="container -vcenter">
+    <button class="btn">large button</button>
+    <button class="btn -small">small button</button>
+    <button class="btn -mini">mini button</button>
+</div>
+<div class="container">
+    <p class="-hcenter">center texts</p>
+</div>
+
+Styleguide 1.9
+*/
+
+
+.-clearfix,.clearfix {
+    @include clearfix;
+}
+.-vcenter {
+    @include vertical-center;
+}
+
+.-hcenter {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

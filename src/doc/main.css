@@ -1,0 +1,2717 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+p, h1, h2, h3, h4, ol, ul, dl, dt, dd, menu, blockquote, q, fieldset, form {
+  margin: 0;
+  padding: 0; }
+
+ol, ul {
+  list-style: none; }
+
+a, button, input {
+  outline: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: 0; }
+  a:active, a:hover {
+    outline: 0; }
+
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif. (removed)
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9. (removed)
+ */
+/*
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+*/
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9. (removed)
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. (removed)
+ */
+/*
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; // 1 //
+  vertical-align: baseline; // 2 //
+}
+*/
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.   (removed)
+ */
+/*
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+*/
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22. (removed)
+ */
+/*
+[hidden],
+template {
+  display: none;
+}
+*/
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10. (removed)
+ */
+/*
+a {
+  background: transparent;
+}
+*/
+/**
+ * Improve readability when focused and also mouse hovered in all browsers. (removed)
+ */
+/*
+a:active,
+a:hover {
+  outline: 0;
+}
+*/
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome. (removed)
+ */
+/*
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+*/
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. (removed)
+ */
+/*
+b,
+strong {
+  font-weight: bold;
+}
+*/
+/**
+ * Address styling not present in Safari 5 and Chrome. (removed)
+ */
+/*
+dfn {
+  font-style: italic;
+}
+*/
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.    (removed)
+ */
+/*
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+*/
+/**
+ * Address styling not present in IE 8/9.   (REMOVED) 
+ */
+/*
+mark {
+  background: #ff0;
+  color: #000;
+}
+*/
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers. (removed)
+ */
+/*
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+*/
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.     (removed)
+ */
+/*
+img {
+  border: 0;
+}
+*/
+/**
+ * Correct overflow displayed oddly in IE 9.    (removed)
+ */
+/*
+svg:not(:root) {
+  overflow: hidden;
+}
+*/
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.   (removed)
+ */
+/*
+figure {
+  margin: 1em 40px;
+}
+*/
+/**
+ * Address differences between Firefox and other browsers. (removed)
+ */
+/*
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+*/
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.   (removed)
+ */
+/*
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+*/
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10. (removed)
+ */
+/*
+button {
+  overflow: visible;
+}
+*/
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.   (removed)
+ */
+/*
+button,
+select {
+  text-transform: none;
+}
+*/
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.   (removed)
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Re-set default cursor for disabled elements. (removed)
+ */
+/*
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+*/
+/**
+ * Remove inner padding and border in Firefox 4+.   (removed)
+ */
+/*
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+*/
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.   (removed)
+ */
+/*
+input {
+  line-height: normal;
+}
+*/
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10. (removed)
+ * 2. Remove excess padding in IE 8/9/10.                   (removed)
+ */
+/*
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; // 1 //
+  padding: 0; // 2 //
+}
+*/
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.     (removed)
+ */
+/*
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+*/
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).     (removed)
+ */
+/*
+input[type="search"] {
+  -webkit-appearance: textfield; // 1 //
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; // 2 //
+  box-sizing: content-box;
+}
+*/
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).    (removed)
+ */
+/*
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+*/
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.    (removed)
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/*
+legend {
+  border: 0; // 1 //
+  padding: 0; // 2 //
+}
+*/
+/**
+ * Remove default vertical scrollbar in IE 8/9.     (removed)
+ */
+/*
+textarea {
+  overflow: auto;
+}
+*/
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.     (removed)
+ */
+/*
+optgroup {
+  font-weight: bold;
+}
+*/
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+/*
+ * 
+ */
+/*
+基本样式
+
+Styleguide 1
+*/
+body {
+  background: #efefef;
+  color: #171717;
+  font-size: 14px;
+  font-family: "Heiti SC", "Droid Sans", "Helvetica Neue", "Microsoft YaHei", Helvetica, Arial, sans-serif; }
+
+p {
+  line-height: 20px; }
+
+/*
+背景颜色
+
+全局参数：<br>
+    `-bg-lighter`<br>
+    `-bg-light`<br>
+    `-bg-normal`<br>
+    `-bg-dark`<br>
+    `-bg-darker`<br>
+    `-bg-darkest`<br>
+    `-bg-brand`<br>
+    `-bg-alert`
+
+Markup:
+<div id="example-1-1">
+    <div class="-bg-lighter"><p>#ffffff</p></div>
+    <div class="-bg-light"><p>#f7f7f7</p></div>
+    <div class="-bg-normal"><p>#efefef</p></div>
+    <div class="-bg-dark"><p>#d5d5d5</p></div>
+    <div class="-bg-darker"><p>#cccccc</p></div>
+    <div class="-bg-darkest"><p>#000000</p></div>
+    <div class="-bg-brand"><p>#6bb1f7</p></div>
+    <div class="-bg-alert"><p>#ff3a2b</p></div>
+</div>
+
+Styleguide 1.1
+*/
+.-bg-lighter {
+  background-color: #ffffff !important; }
+
+.-bg-normal {
+  background-color: #efefef !important; }
+
+.-bg-light {
+  background-color: #f7f7f7 !important; }
+
+.-bg-dark {
+  background-color: #d5d5d5 !important; }
+
+.-bg-darker {
+  background-color: #cccccc !important; }
+
+.-bg-darkest {
+  background-color: #000000 !important; }
+
+.-bg-brand {
+  background-color: #6bb1f7 !important; }
+
+.-bg-alert {
+  background-color: #ff3a2b !important; }
+
+/*
+半透明背景颜色
+
+全局参数：<br>
+    `-bg-transparent`<br>
+
+Markup:
+<div id="example-1-2">
+    <div class="-bg-lighter -bg-transparent"></div>
+    <div class="-bg-darker -bg-transparent"></div>
+</div>
+
+Styleguide 1.2
+*/
+.-bg-transparent {
+  opacity: 0.8 !important; }
+
+/*
+阴影
+
+阴影包括2种：卡片阴影和对话框阴影。其中卡片阴影方向为正下方；对话框阴影为右下方。
+
+全局参数：<br>
+    `-shadow-card`<br>
+    `-shadow-dialog`
+
+Markup:
+<div id="example-1-3">
+    <div class="-bg-lighter -shadow-card"></div>
+    <div class="-bg-lighter -shadow-dialog"></div>
+</div>
+
+Styleguide 1.3
+*/
+.-shadow-card {
+  -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2) !important; }
+
+.-shadow-dialog {
+  -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4) !important; }
+
+/*
+字体样式
+
+FE（RD）无需自定义字体样式，整个 Web app 的字体样式统一为：
+
+    font-family: "Heiti SC", "Droid Sans", Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+Styleguide 1.4
+*/
+/*
+字体大小
+
+字体大小分为12px、14px、15px 和 16px 四个等级。
+
+全局参数：<br>
+    `-ft-small`<br>
+    `-ft-base`<br>
+    `-ft-middle`<br>
+    `-ft-large`
+
+Markup:
+<div id="example-1-5">
+    <p class="-ft-small">12px（24pt）</p>
+    <p class="-ft-base">14px（28pt）</p>
+    <p class="-ft-middle">15px（30pt）</p>
+    <p class="-ft-large">16px（32pt）</p>
+</div>
+
+Styleguide 1.5
+*/
+.-ft-small {
+  font-size: 12px !important; }
+
+.-ft-base {
+  font-size: 14px !important; }
+
+.-ft-middle {
+  font-size: 15px !important; }
+
+.-ft-large {
+  font-size: 16px !important; }
+
+/*
+字体颜色
+
+一共包括7种字体颜色。
+
+全局参数：<br>
+    `-ft-alert`<br>
+    `-ft-brand`<br>
+    `-ft-primary`<br>
+    `-ft-secondary`<br>
+    `-ft-tertiary`<br>
+    `-ft-fourth`<br>
+    `-ft-fifth`<br>
+    `-ft-sixth`<br>
+    `-ft-lighter`
+
+Markup:
+<div id="example-1-6">
+    <p class="-ft-alert">#f55925</p>
+    <p class="-ft-brand">#4c90f9</p>
+    <p class="-ft-primary">#171717</p>
+    <p class="-ft-secondary">#313440</p>
+    <p class="-ft-tertiary">#696e74</p>
+    <p class="-ft-fourth">#919db4</p>
+    <p class="-ft-fifth">#bababa</p>
+    <p class="-ft-sixth">#bdbdbd</p>
+    <p class="-ft-lighter">#ffffff</p>
+</div>
+
+Styleguide 1.6
+*/
+.-ft-alert {
+  color: #f55925 !important; }
+
+.-ft-brand {
+  color: #4c90f9 !important; }
+
+.-ft-primary {
+  color: #171717 !important; }
+
+.-ft-secondary {
+  color: #313440 !important; }
+
+.-ft-tertiary {
+  color: #696e74 !important; }
+
+.-ft-fourth {
+  color: #919db4 !important; }
+
+.-ft-fifth {
+  color: #bababa !important; }
+
+.-ft-sixth {
+  color: #bdbdbd !important; }
+
+.-ft-lighter {
+  color: #ffffff !important; }
+
+/*
+垂直间隔
+
+包括三种垂直间隔大小。
+
+全局参数：<br>
+    `-spacing-small` <br>
+    `-spacing-base` <br>
+    `-spacing-large` <br>
+
+Markup:
+<div id="example-1-7" class="container -normal">
+    <div class="card -lighter -spacing-small">
+        spacing small
+    </div>
+    <div class="card -lighter -spacing-base">
+        spacing base
+    </div>
+    <div class="card -lighter -spacing-large">
+        spacing large
+    </div>
+</div>
+
+Styleguide 1.7
+*/
+.-spacing-small {
+  margin-bottom: 5px !important; }
+
+.-spacing-base {
+  margin-bottom: 10px !important; }
+
+.-spacing-large {
+  margin-bottom: 15px !important; }
+
+/*
+边框
+
+全局参数:
+
+`-border-round` 增加圆角边框
+
+Markup:
+<div class="container">
+    <button class="btn">normal button</button>
+    <button class="btn -border-round">round border button</button>
+</div>
+
+Styleguide 1.8
+*/
+.-border-round {
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+.-border-alert {
+  border: 1px solid #f55925 !important; }
+
+/*
+其他
+
+全局参数
+
+`-vcenter` 垂直居中
+
+`-hcenter` 水平居中
+
+`-clearfix` 清除浮动
+
+Markup:
+<div class="container -vcenter">
+    <button class="btn">large button</button>
+    <button class="btn -small">small button</button>
+    <button class="btn -mini">mini button</button>
+</div>
+<div class="container">
+    <p class="-hcenter">center texts</p>
+</div>
+
+Styleguide 1.9
+*/
+.-clearfix:before, .-clearfix:after, .clearfix:before, .clearfix:after {
+  display: table;
+  content: " "; }
+.-clearfix:after, .clearfix:after {
+  clear: both; }
+
+.-vcenter:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; }
+
+.-hcenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/*
+ * author: houhongru@baidu.com
+ */
+/*
+栅格系统
+
+”栅格“系统通过定义`row`和`col`，实现了将页面在垂直方向上分隔的方法。
+
+Styleguide 3
+*/
+/*
+行
+
+类名：`row`<br>
+
+带有row类的元素将使内部元素会呈现在同一行上。所有子元素采用浮动列模式，即所有子元素有等分的宽度
+
+参数：
+
+在子元素添加`-col-auto`类， 可以使子元素使用默认宽，不自动等宽。
+
+Markup:
+<div id="example-2-1">
+    <div class="container">
+        <div class="row">
+            <p class="-bg-light">Column 1 </p>
+            <p class="-bg-brand">Column 2</p>
+            <p class="-bg-darker -ft-fifth">Column 3 </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="-bg-light">Column 1 </p>
+            <p class="-bg-brand">Column 2</p>
+            <p class="-bg-darker -col-auto -ft-fifth">Auto-width Column 3 </p>
+    </div>
+    </div>
+</div>
+
+Styleguide 3.1
+*/
+.row, .flex-row, .btn-group {
+  width: 100%;
+  -webkit-box-align: center;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  -webkit-align-items: center; }
+  .row > *, .row > .flex-row, .row > .btn-group {
+    display: block !important;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1; }
+  .row > .-col-auto, .row > .flex-row, .row > .btn-group {
+    display: block !important;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto; }
+  .row.-icon, .-icon.flex-row, .-icon.btn-group, .row .-icon, .row .flex-row, .row .btn-group {
+    position: relative; }
+    .row.-icon:after, .-icon.flex-row:after, .-icon.btn-group:after, .row .-icon:after, .row .flex-row, .row .btn-group {
+      content: "\e60d";
+      font-family: "mwa";
+      position: absolute;
+      color: #bababa;
+      font-size: 12px;
+      top: 50%;
+      right: 0;
+      margin-top: -0.5em; }
+  .row.-icon-mark, .-icon-mark.flex-row, .-icon-mark.btn-group, .row .-icon-mark, .row .flex-row, .row .btn-group {
+    position: relative; }
+    .row.-icon-mark:after, .-icon-mark.flex-row:after, .-icon-mark.btn-group:after, .row .-icon-mark:after, .row .flex-row, .row .btn-group {
+      content: "\e608";
+      font-family: "mwa";
+      position: absolute;
+      color: #bababa;
+      font-size: 12px;
+      top: 50%;
+      right: 0;
+      margin-top: -0.5em; }
+
+.-col1 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 8.33333% !important; }
+
+.-col2 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 16.66667% !important; }
+
+.-col3 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 25% !important; }
+
+.-col4 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 33.33333% !important; }
+
+.-col5 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 41.66667% !important; }
+
+.-col6 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 50% !important; }
+
+.-col7 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 58.33333% !important; }
+
+.-col8 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 66.66667% !important; }
+
+.-col9 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 75% !important; }
+
+.-col10 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 83.33333% !important; }
+
+.-col11 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 91.66667% !important; }
+
+.-col12 {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: none !important;
+  width: 100% !important; }
+
+/*
+固定列模式
+
+栅格同时也支持固定列模式。固定列模式采用12列栅格，将整个宽度按12列划分，通过定义每个元素所占col数表示其所占的宽度。 例如宽度占4列表示占总宽度的1/3 (4/12)。 
+
+全局参数：<br>
+    `-col1` <br>
+    `-col2` (1/6)<br>
+    `-col3` (1/4)<br>
+    `-col4` (1/3)<br>
+    `-col5` <br>
+    `-col6` (1/2)<br>
+    `-col7` <br>
+    `-col8` (2/3)<br>
+    `-col9` (3/4)<br>
+    `-col10` (5/6)<br>
+    `-col11` <br>
+    `-col12` (100%)
+
+
+Markup:
+<div id="example-2-2">
+    <div class="row -icon-mark">
+        <p class="-col1">-col1</p>
+        <p class="-col11">-col11</p>
+    </div>
+    <div class="row">
+        <p class="-col2 -icon-mark">-col2 (1/6)</p>
+        <p class="-col10">-col10 (5/6)</p>
+    </div>
+    <div class="row">
+        <p class="-col3 -icon">-col3 (1/4)</p>
+        <p class="-col9">-col9 (3/4)</p>
+    </div>
+    <div class="row">
+        <p class="-col4">-col4 (1/3)</p>
+        <p class="-col8">-col8 (2/3)</p>
+    </div>
+    <div class="row">
+        <p class="-col5">-col5</p>
+        <p class="-col7">-col7</p>
+    </div>
+    <div class="row">
+        <p class="-col6">-col6 (1/2)</p>
+        <p class="-col6">-col6 (1/2)</p>
+    </div>
+    <div class="row">
+        <p class="-col12">-col12 (100%)</p>
+    </div>
+</div>
+
+Styleguide 3.2
+*/
+/*
+混合模式
+
+浮动列模式可以和固定列模式混合使用，如下例子所示：
+
+Markup:
+<div id="example-2-3">
+    <div class="row">
+        <div class="-col6">
+           <p>1/2</p>
+        </div>
+        <div class="-col4">
+           <p>1/3</p>
+        </div>
+        <div>
+            <p>Auto</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="-col4">
+           <p>1/3</p>
+        </div>
+        <div>
+            <p>Auto</p>
+        </div>
+        <div class="-col3">
+           <p>1/4</p>
+        </div>
+    </div>
+</div>
+
+Styleguide 3.3
+*/
+/*
+等宽浮动行
+
+类名 `flex-row`
+
+@deprecated `row`已经实现等宽浮动行
+
+Styleguide 3.4
+*/
+
+/*
+图标
+
+Styleguide 11
+*/
+/*
+图标
+
+类名 `icon`，要使用某个图标时，需要同时加上图标的名字作为参数：`icon -<name>` 。
+
+
+默认大小 16x16 
+
+
+参数：
+-large 使用 20x20 大图标
+
+图标采用icon-font实现，也可以通过直接引用icon-font的css代码，完整的图标列表，请戳[链接](icons/demo.html)
+
+Markup:
+<div id="example-13-1">
+    <div class="container">
+    <p><i class="icon -telephone -mr-small"></i>电话</p>
+    <p><i class="icon -address -mr-base"></i>地址</p>
+    <p><i class="icon -search -mr-large"></i>搜索</p>
+    </div>
+    <div class="container">
+    <p> 大图标</p>
+    <p><i class="icon -close -large -mr-small"></i>关闭</p>
+    <p><i class="icon -pic-open -large -mr-base"></i>图片打开</p>
+    <p><i class="icon -pic-close -large -mr-large"></i>图片关闭</p>
+    </div>
+</div>
+
+Styleguide 11.1
+*/
+@font-face {
+  font-family: "mwa";
+  src: url("../icons/mwa.eot");
+  src: url("../icons/mwa.woff") format("woff"), url("../icons/mwa.ttf") format("truetype"); }
+
+.icon {
+  display: inline-block;
+  font-family: "mwa";
+  font-weight: normal;
+  font-style: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+  .icon.-mr-small:before {
+    margin-right: 5px; }
+  .icon.-mr-base:before {
+    margin-right: 10px; }
+  .icon.-mr-large:before {
+    margin-right: 15px; }
+  .icon:before {
+    font-size: 16px; }
+  .icon.-large:before {
+    font-size: 20px; }
+  .icon.-small:before {
+    font-size: 12px; }
+  .icon.-telephone:before {
+    content: "\e600"; }
+  .icon.-start:before {
+    content: "\e601"; }
+  .icon.-search:before {
+    content: "\e602"; }
+  .icon.-profile:before {
+    content: "\e603"; }
+  .icon.-plus:before {
+    content: "\e604"; }
+  .icon.-pic-open:before {
+    content: "\e605"; }
+  .icon.-pic-close:before {
+    content: "\e606"; }
+  .icon.-minus:before {
+    content: "\e607"; }
+  .icon.-mark:before {
+    content: "\e608"; }
+  .icon.-location:before {
+    content: "\e609"; }
+  .icon.-list:before {
+    content: "\e60a"; }
+  .icon.-line-phone:before {
+    content: "\e60b"; }
+  .icon.-gotop:before {
+    content: "\e60c"; }
+  .icon.-forward-arrow:before {
+    content: "\e60d"; }
+  .icon.-end:before {
+    content: "\e60e"; }
+  .icon.-down-angle:before {
+    content: "\e60f"; }
+  .icon.-close:before {
+    content: "\e610"; }
+  .icon.-clock:before {
+    content: "\e611"; }
+  .icon.-circle:before {
+    content: "\e612"; }
+  .icon.-cart:before {
+    content: "\e613"; }
+  .icon.-back-arrow:before {
+    content: "\e614"; }
+  .icon.-address:before {
+    content: "\e615"; }
+
+/*
+ * author: houhongru@baidu.com
+ */
+/*
+按钮
+
+类名：`btn`<br><br>
+
+以下三种元素在添加 `btn` class 后均显示为按钮，需要同时添加表示宽度的 class：
+
+`<a href="#" class="btn">Link Button</a>`<br>
+`<button class="btn">Button Element</button>`<br>
+`<input type="button" class="btn" value="input button">`
+
+参数：
+
+`-flat` 使用扁平化按钮样式 (无边框）
+
+Styleguide 4
+*/
+/*
+按钮大小
+
+可选参数：<br>
+    `-large`（默认值）<br>
+    `-small`<br>
+    `-mini`
+
+Markup:
+<div id="example-3-1">
+    <div class="row">
+        <a href="#" class="btn -col3 {$modifiers}">Link Button</a>
+        <button class="btn -col3 {$modifiers}">Button Element</button>
+        <input type="button" class="btn -col3 {$modifiers}" value="input button"/>
+    </div>
+    <div class="row">
+        <a href="#" class="btn -small -col3 {$modifiers}">Link Button</a>
+        <button class="btn -small -col3 {$modifiers}">Button Element</button>
+        <input type="button" class="btn -small -col3 {$modifiers}" value="input button"/>
+    </div>
+    <div class="row">
+        <a href="#" class="btn -mini {$modifiers}">Link Button</a>
+        <button class="btn -mini {$modifiers}">Button Element</button>
+        <input type="button" class="btn -mini {$modifiers}" value="input button"/>
+    </div>
+    <div class="row">
+        <a href="#" class="btn -flat {$modifiers}">Link Button</a>
+        <button class="btn -flat {$modifiers}">Button Element</button>
+        <input type="button" class="btn -flat {$modifiers}" value="input button"/>
+    </div>
+</div>
+
+:active              - 按下按钮时的效果。
+
+Styleguide 4.1
+*/
+/*
+按钮颜色
+
+`默认` 继承父元素
+
+可选参数：<br>
+    `-lighter`（默认值）<br>
+    `-light`<br>
+    `-brand`<br>
+    `-alert`<br>
+
+Markup:
+<div id="example-3-2">
+    <div class="row">
+        <button class="btn -col4 {$modifiers}">Button Element</button>
+    </div>
+    <div class="row">
+        <button class="btn -light -col4 {$modifiers}">Button Element</button>
+    </div>
+    <div class="row">
+        <button class="btn -brand -col4 {$modifiers}">Button Element</button>
+    </div>
+    <div class="row">
+        <button class="btn -alert -col4 {$modifiers}">Button Element</button>
+    </div>
+</div>
+
+:active              - 按下按钮时的效果。
+
+Styleguide 4.2
+*/
+.btn {
+  border: #d7d8d9 solid 1px;
+  padding: 0 10px;
+  color: inherit;
+  background-color: inherit; }
+  .btn:active {
+    background-color: #e2e2e2; }
+  .btn, .btn.-large {
+    height: 44px;
+    min-width: 44px;
+    font-size: 15px; }
+  .btn.-small {
+    height: 36px;
+    min-width: 36px;
+    font-size: 14px; }
+  .btn.-mini {
+    height: 30px;
+    min-wdith: 30px;
+    font-size: 12px;
+    padding: 0 5px; }
+  .btn.-lighter {
+    color: #171717;
+    background-color: #ffffff; }
+    .btn.-lighter:active {
+      background-color: #f2f2f2; }
+  .btn.-light {
+    color: #171717;
+    background-color: #f7f7f7; }
+    .btn.-light:active {
+      background-color: #eaeaea; }
+  .btn.-brand {
+    color: #ffffff;
+    background-color: #6bb1f7;
+    border-color: #6bb1f7; }
+    .btn.-brand:active {
+      background-color: #53a4f6;
+      border-color: #53a4f6; }
+  .btn.-alert {
+    color: #ffffff;
+    background-color: #ff3a2b;
+    border-color: #ff3a2b; }
+    .btn.-alert:active {
+      background-color: #ff2112;
+      border-color: #ff2112; }
+  .btn.-flat {
+    border: none; }
+    .btn.-flat:active {
+      background-color: inherit;
+      opacity: 0.2; }
+
+a.btn {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden; }
+  a.btn:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 0;
+    margin-top: 0.3em; }
+
+/*
+按钮组
+
+若要使多个按钮形成按钮组，需要将多个按钮放入名为 `btn-group` 的类中。
+
+类名：`btn-group` （实现与`row`相同）
+
+参数：
+
+`-flat` 使用扁平化按钮样式
+
+Markup:
+<div id="example-3-3">
+    <div class="btn-group -spacing-base">
+        <button class="btn -small">Button 1</button>
+        <button class="btn -small">Button 2</button>
+        <button class="btn -small">Button 3</button>
+    </div>
+    <div class="btn-group -spacing-base">
+        <a class="btn -col4">Button 1</a>
+        <a class="btn -col4">Button 2</a>
+        <a class="btn -col4">Button 3</a>
+    </div>
+    <div class="btn-group -flat">
+        <a class="btn">Button 1</a>
+        <a class="btn">Button 2</a>
+        <a class="btn">Button 3</a>
+    </div>
+</div>
+
+Styleguide 4.3
+*/
+.btn-group .btn:not(:last-child) {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+.btn-group .btn:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+.btn-group.-flat {
+  border-top: #d7d8d9 solid 1px;
+  border-bottom: #d7d8d9 solid 1px; }
+  .btn-group.-flat .btn {
+    border: none;
+    border-radius: 0;
+    position: relative; }
+    .btn-group.-flat .btn:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      height: 16px;
+      width: 1px;
+      background-color: #d4d4d4;
+      top: 50%;
+      margin-top: -0.5em; }
+    .btn-group.-flat .btn:last-child:after {
+      width: 0; }
+
+/*
+ * author: houhongru@baidu.com
+ */
+/*
+表单
+
+Styleguide 5
+*/
+/*
+input text
+
+类名：`input-text`<br><br>
+可选参数：<br>
+
+1. 结构参数：<br>
+    `-icon` 输入框内带有左icon, 留出左部空白<br>
+
+2. 边框颜色参数：<br>
+    `-brand` 百度色边框<br>
+    `-alert` 提示色边框
+
+Markup:
+<div id="example-4-1">
+    <div class="container">
+        <div class="input-text -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -brand -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -alert -spacing-base"><input type="text" placeholder="Hi there"></div>
+    </div>
+    <div class="container">
+        <div class="input-text -icon -brand -spacing-base"><input type="text" placeholder="Hi there"></div>
+        <div class="input-text -icon -alert"><input type="text" placeholder="Hi there"></div>
+    </div>
+</div>
+
+Styleguide 5.1
+*/
+input[type="text"], select {
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  border: none; }
+
+.input-text {
+  font-size: 14px;
+  border: #d7d8d9 solid 1px;
+  position: relative; }
+  .input-text input[type="text"] {
+    width: 100%;
+    padding: 8px; }
+  .input-text.-icon > .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 6px;
+    font-size: 16px; }
+  .input-text.-icon input[type="text"] {
+    padding-left: 30px; }
+  .input-text.-brand {
+    border-color: #6bb1f7; }
+  .input-text.-alert {
+    border-color: #ff3a2b; }
+
+/*
+input group
+
+类名：`input-group` 
+
+将输入框、图标和按钮进行组合
+
+图标大小 20X20 px
+
+按钮和输入框等高，为36px
+
+Markup:
+<div id="example-4-2">
+    <div class="container">
+        <div class="input-group">
+            <div class="input-text -icon">
+                <i class="icon -search -ft-brand"></i>
+                <input type="text"></input>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <div class="input-text">
+                <input type="text"></input>
+            </div>
+            <input type="submit" class="btn -brand" value="搜索"></input>
+        </div>
+    </div>
+</div>
+
+Styleguide 5.2
+*/
+.input-group {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: start; }
+  .input-group .input-text {
+    -webkit-box-flex: 1; }
+  .input-group .btn:first-child {
+    border-right: none; }
+  .input-group .btn:last-child {
+    border-left: none; }
+  .input-group .btn, .input-group .input-text {
+    height: 38px; }
+
+/*
+select
+
+类名: `select-box` <br><br>
+
+必须用有该类名的元素包裹select元素
+
+Markup:
+<div id="example-4-3">
+    <div class="container">
+        <div class="select-box">
+        <select name="filter" >
+            <option>全部</option>
+            <option>美食</option>
+            <option>酒店</option>
+        </select>
+        </div>
+    </div>
+    <div class="container row">
+        <div class="select-box -col4">
+        <select name="filter" >
+            <option>全部</option>
+            <option>美食</option>
+            <option>酒店</option>
+        </select>
+        </div>
+    </div>
+</div>
+
+Styleguide 5.3
+*/
+.select-box {
+  height: 30px;
+  font-size: 14px;
+  border: #d7d8d9 solid 1px;
+  display: inline-block;
+  position: relative; }
+  .select-box select {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 3px;
+    background-color: #fff; }
+  .select-box:after {
+    display: inline-block;
+    font-family: "mwa";
+    content: "\e61b";
+    -webkit-font-smoothing: antialiased;
+    color: #696e74;
+    position: absolute;
+    font-size: 12px;
+    right: 3px;
+    top: 50%;
+    margin-top: -8px;
+    pointer-events: none; }
+
+/*
+label
+
+类名 `wa-label`
+
+Markup:
+<div id="example-4-4">
+    <div class="container">
+        <span class="wa-label -small -bg-alert">1</span>
+        <span class="wa-label">2</span>
+        <span class="wa-label -bg-brand">LBS</span>
+        <span class="wa-label -large -bg-brand">Webapp</span>
+    </div>
+</div>
+
+Styleguide 5.4 
+*/
+.wa-label {
+  padding: 0 4px;
+  height: 24px;
+  line-height: 24px;
+  min-width: 24px;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #d5d5d5;
+  display: inline-block;
+  text-align: center; }
+  .wa-label.-small {
+    padding: 0 2px;
+    height: 16px;
+    line-height: 16px;
+    min-width: 16px; }
+  .wa-label.-large {
+    padding: 0 8px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 30px; }
+
+/*
+缩略图
+
+Styleguide 6
+*/
+/*
+基本样式
+
+类名：`thumbnail`
+
+子元素部分：
+
+标签`<img>` 或 类名 `thumb-img` ：图像部分
+
+类名`caption` ；标题部分
+
+Markup:
+<div id="example-5-1 card">
+<div class="row">
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+</div>
+
+Styleguide 6.1
+*/
+.thumbnail {
+  display: block;
+  padding: 5px; }
+  .thumbnail > img, .thumbnail div.thumb-img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 1px;
+    text-align: center; }
+  .thumbnail > .caption {
+    display: block;
+    padding: 0;
+    margin: 5px auto 0 auto;
+    text-align: center;
+    font-size: 12px; }
+
+a.thumbnail:active {
+  background-color: #e2e2e2; }
+
+/*
+示例
+
+Markup:
+<div id="example-5-2" class="container -normal">
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-canyin"></div>
+            <div class="caption">美食</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-hotel"></div>
+            <div class="caption">酒店</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+            <div class="caption">电影院</div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-bus"></div>
+            <div class="caption">公交车</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-subway"></div>
+            <div class="caption">地铁图</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-sale"></div>
+            <div class="caption">团购</div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-streetview"></div>
+            <div class="caption">全景</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-taxi"></div>
+            <div class="caption">打车</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon newui_1_nb"></div>
+            <div class="caption">随便看看</div>
+        </a>
+    </div>
+</div>
+
+Styleguide 6.2
+*/
+/*
+Tab
+
+类名：`tab`
+
+只支持 `<ul>/<li>/<a>` 的结构
+
+Styleguide 7
+*/
+/*
+
+Tab样式
+
+`默认`  Tab用于切换整个页面的样式
+
+`-secondary`  Tab用于切换局部元素的样式
+
+Markup:
+<div class="-bg-normal -spacing-large">
+    <ul class="tab -spacing-base">
+        <li><a href="#"><i class="icon -marker"></i> 地图</a></li>
+        <li class="active"><a href="#"><i class="icon -place"></i> 周边</a></li>
+        <li><a href="#"><i class="icon -route"></i> 路线</a></li>
+    </ul>
+</div>
+<div class="container">
+    <ul class="tab -secondary -bg-normal -spacing-base">
+        <li class="active"><a href="#">较快捷</a></li>
+        <li><a href="#">少步行</a></li>
+        <li><a href="#">少换乘</a></li>
+        <li><a href="#">不坐地铁</a></li>
+    </ul>
+</div>
+<div class="container">
+    <ul class="tab -secondary -bg-normal -spacing-base">
+        <li><a href="#">较快捷</a></li>
+        <li class="active"><a href="#">少步行</a></li>
+        <li><a href="#">少换乘</a></li>
+        <li><a href="#">不坐地铁</a></li>
+    </ul>
+</div>
+<div class="container">
+    <ul class="tab -secondary -bg-normal">
+        <li><a href="#">较快捷</a></li>
+        <li><a href="#">少步行</a></li>
+        <li><a href="#">少换乘</a></li>
+        <li class="active"><a href="#">不坐地铁</a></li>
+    </ul>
+</div>
+
+Styleguide 7.1
+*/
+ul.tab {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+  table-layout: fixed; }
+  ul.tab > li {
+    display: table-cell;
+    position: relative;
+    border-bottom: #d7d8d9 solid 1px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1; }
+    ul.tab > li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 16px;
+      width: 1px;
+      background-color: #d4d4d4;
+      top: 50%;
+      margin-top: -0.5em; }
+    ul.tab > li.active {
+      border-bottom: none;
+      color: #4c90f9;
+      background-color: #d1dcef; }
+      ul.tab > li.active:before, ul.tab > li.active + li:before {
+        width: 0;
+        height: 0; }
+    ul.tab > li:first-child:before {
+      width: 0; }
+    ul.tab > li > a {
+      height: 50px;
+      display: block; }
+      ul.tab > li > a:active {
+        background-color: #d1dcef; }
+      ul.tab > li > a:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px; }
+      ul.tab > li > a:before {
+        margin-top: 0.3em; }
+
+ul.tab.-secondary > li {
+  border-top: #d7d8d9 solid 1px;
+  font-size: 14px; }
+  ul.tab.-secondary > li > a {
+    height: auto;
+    padding: 15px 0; }
+  ul.tab.-secondary > li.active {
+    font-size: 14px;
+    background-color: #ffffff;
+    border-left: #d7d8d9 solid 1px;
+    border-right: #d7d8d9 solid 1px; }
+    ul.tab.-secondary > li.active:first-child {
+      border-left: none; }
+    ul.tab.-secondary > li.active:last-child {
+      border-right: none; }
+
+/*
+容器
+
+容器是组成页面布局的基本结构，通过容器将整个页面在横向上分割为各个区块, (下一节的栅格将在纵向上分割区块）。
+
+Markup:
+<div class="example-window -bg-normal" style="width:360px"> 
+    <div class="container -border -light">Nav bar</div>
+    <div class="container -layout main -border">
+        <div class="card -base-h -lighter -spacing-base">
+            <div class="container -large-v -border">search box</div>
+            <div class="container -large-v">buttons</div>
+        </div>
+        <div class="card -large -light" style="height:300px">results body</div>
+    </div>
+    <div class="container -light">footer</div>
+</div>
+
+Styleguide 2
+*/
+.card, .container {
+  display: block;
+  overflow: hidden; }
+  .card.-base, .container.-base {
+    padding: 10px 10px; }
+  .card.-large, .container.-large {
+    padding: 15px 10px; }
+  .card.-small-h, .container.-small-h {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .card.-small-v, .container.-small-v {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .card.-base-h, .container.-base-h {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .card.-base-v, .container.-base-v {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .card.-large-h, .container.-large-h {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .card.-large-v, .container.-large-v {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .card.-lighter, .container.-lighter {
+    background-color: #ffffff;
+    color: #171717; }
+  .card.-light, .container.-light {
+    background-color: #f7f7f7;
+    color: #171717; }
+  .card.-normal, .container.-normal {
+    background-color: #efefef;
+    color: #171717; }
+  .card.-dark, .container.-dark {
+    background-color: #d5d5d5;
+    color: #171717; }
+
+/*
+容器样式
+
+可使用的容器有`card`和`container`两种基本容器。`card`是在`container` 的基础样式之上增加了border样式
+
+类名：`container`
+
+`默认`
+
+可选参数：
+
+`-base` -base-h + -base-v
+
+`-large` -large-v + -base-h
+
+`-small-h` 减少左右padding
+
+`-small-v` 减少上下padding
+
+`-base-h` 正常左右padding
+
+`-base-v` 正常上下padding
+
+`-large-h` 增加左右padding
+
+`-large-v` 增加上下padding
+
+`-border` 添加border-bottom
+
+`-layout` 添加布局样式 -small-h + margin 上下为10px
+
+Markup:
+<div id="example-7-1" style="width:360px">
+    <div class="container -light">
+        <div class="container -lighter ">normal container</div>
+        <div class="container -light -base"> -base</div>
+        <div class="container -light -large"> -large</div>
+        <div class="container -normal -small-v -large-h"> -small-v -large-h</div>
+        <div class="container -dark -border"> border container</div>
+    </div>
+</div>
+
+Styleguide 2.1
+*/
+/*
+容器颜色
+
+颜色定义和卡片相同
+
+Markup:
+<div id="example-7-4">
+    <div class="container -lighter">lighter container</div>
+    <div class="container -light">light container</div>
+    <div class="container -normal">normal container</div>
+    <div class="container -dark">dark container</div>
+</div>
+
+Styleguide 2.2
+*/
+.container.-border {
+  border-bottom: #d7d8d9 solid 1px; }
+.container.-layout {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/*
+卡片样式
+
+类名: `card`
+
+可选参数：
+
+`-base` -base-h + -base-h
+
+`-large` -large-v + -base-h
+
+`-small-h` 减少左右padding
+
+`-small-v` 减少上下padding
+
+`-base-h` 正常左右padding
+
+`-base-v` 正常上下padding
+
+`-large-h` 增加左右padding
+
+`-large-v` 增加上下padding
+
+`-layout` 添加布局样式 -base-h + -spacing-base
+
+Markup:
+<div id="example-7-1" style="width:360px">
+    <div class="card -base">
+        <div class="card -light -spacing-base">normal card</div>
+        <div class="card -light -layout"> layout card</div>
+        <div class="card -light -large -spacing-base">large card</div>
+    </div>
+</div>
+
+Styleguide 2.3
+*/
+/*
+卡片颜色
+
+`默认` 继承父级元素
+
+可选参数：
+
+`-lighter` <br>
+`-light` <br>
+`-normal` <br>
+`-dark` <br>
+
+Markup:
+<div id="example-7-2" style="width:360px">
+    <div class="card -large -lighter -spacing-base">lighter card</div>
+    <div class="card -large -light -spacing-base">light card</div>
+    <div class="card -large -normal -spacing-base">normal card</div>
+    <div class="card -large -dark">dark card</div>
+</div>
+
+Styleguide 2.4
+*/
+.card {
+  border: #d7d8d9 solid 1px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+  .card.-layout {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px; }
+
+/*
+列表
+
+只支持`<ul>/<li>/<a>`元素格式
+
+Styleguide 8
+*/
+/*
+
+列表样式
+
+`默认` 
+
+可选参数：
+
+`-large` 增大padding
+
+`-icon` 加上箭头图标
+
+Markup:
+<div class="example-8-1">
+    <div class="container">
+    <ul class="list-group">
+        <li>
+            <a>linked list item 1</a>
+        </li>
+        <li>
+            <a>linked list item 2</a>
+        </li>
+    </ul>
+    </div>
+    <div class="container">
+    <ul class="list-group -large -icon">
+        <li>
+            <a>linked list item 1</a>
+        </li>
+        <li>
+            <a>linked list item 2</a>
+        </li>
+    </ul>
+    </div>
+</div>
+
+Styleguide 8.1
+*/
+ul.list-group {
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  border: #d7d8d9 solid 1px; }
+  ul.list-group > li {
+    position: relative;
+    padding: 0 10px; }
+    ul.list-group > li:active {
+      background-color: #f2f2f2; }
+    ul.list-group > li > a {
+      border-bottom: #d7d8d9 solid 1px;
+      display: block;
+      padding: 10px 10px; }
+    ul.list-group > li:last-child > a {
+      border-bottom: none; }
+  ul.list-group.-large > li > a {
+    padding: 15px 10px; }
+  ul.list-group.-icon > li {
+    position: relative; }
+    ul.list-group.-icon > li:after {
+      content: "\e60d";
+      font-family: "mwa";
+      position: absolute;
+      color: #bababa;
+      font-size: 12px;
+      top: 50%;
+      right: 10px;
+      margin-top: -0.5em; }
+
+/*
+
+示例
+
+Markup:
+<div id="example-8-3" class="card">
+    <ul class="list-group">
+        <li>
+            <a>
+                <span>
+                    717路 > 地铁1号线 <br>
+                    18:09到达, 约1小时50分钟/22.6公里
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span>
+                    地铁13号线 > 地铁2号线 > 地铁1号线 <br>
+                    18:06到达，约1小时40分钟/23.5公里
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span>
+                    717路 > 地铁1号线 <br>
+                    18:09到达, 约1小时50分钟/22.6公里
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+Styleguide 8.3
+*/
+/*
+表格
+
+尚未完工，敬请期待
+
+Styleguide 9
+*/
+/*
+
+  表格颜色
+
+Markup:
+<div class="card">
+    <table class="table">
+        <tr>
+            <td rowspan="3">餐饮</td>
+            <td><a href="#">中餐</a></td>
+            <td><a href="#">中餐</a></td>
+        </tr>
+        <tr>
+            <td>中餐</td>
+            <td>中餐</td>
+        </tr>
+        <tr>
+            <td>中餐</td>
+            <td>中餐</td>
+        </tr>
+    </table>
+</div>
+
+Styleguide 9.1
+*/
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table.table tr th, table.table tr td {
+    padding: 5px 5px;
+    border: #d7d8d9 solid 1px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 1.4; }
+
+/*
+ * author: houhongru@baidu.com
+ */
+/*
+弹出框
+
+Styleguide 10
+*/
+/*
+弹出框
+
+类名：`popover`<br><br>
+可选参数：<br>
+
+1. 背景颜色参数：<br>
+    `-dark` 暗色系<br>
+
+2. 箭头指向参数：<br>
+    `-top-angle` 向上箭头<br>
+    `-bottom-angle` 向下箭头
+
+Markup:
+<div id="example-10" class="container -normal">
+    <div class="row -spacing-base">
+        <div class="popover -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -top-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -bottom-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="popover -dark -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -dark -top-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+        <div class="popover -dark -bottom-angle -col2">
+            <div class="content">
+                <p>正在加载...</p>
+            </div>
+            <div class="angle"></div>
+        </div>
+    </div>
+</div>
+
+Styleguide 10.1
+*/
+.popover {
+  position: relative; }
+  .popover:before, .popover:after {
+    display: table;
+    content: " "; }
+  .popover:after {
+    clear: both; }
+  .popover .content {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4) !important;
+    color: #171717;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center; }
+    .popover .content:before, .popover .content:after {
+      display: table;
+      content: " "; }
+    .popover .content:after {
+      clear: both; }
+  .popover.-top-angle .angle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 10px solid #ffffff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -10px;
+    left: -8px;
+    margin-top: 0;
+    margin-left: 50%; }
+  .popover.-bottom-angle .angle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 10px solid #ffffff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: 100%;
+    left: -8px;
+    margin-top: 0;
+    margin-left: 50%; }
+  .popover.-dark .content {
+    background-color: #cccccc;
+    color: #ffffff; }
+  .popover.-dark.-top-angle .angle {
+    border-bottom: #cccccc 10px solid; }
+  .popover.-dark.-bottom-angle .angle {
+    border-top: #cccccc 10px solid; }
+
+/*
+示例
+
+StyleGuide 21
+
+*/
+/*
+首页
+
+Markup:
+<div id="example-11-1" class="example-11">
+    <div class="-bg-normal -ft-base">
+        <div id="index-header-widget" class="container -dark">
+            <div class="row">
+                <div class="-col4" style="padding-left:20px">
+                    <button class="btn -mini -light -ft-base">百度</button>
+                </div>
+                <div class="-col4 -ft-large" style="text-align:center;">百度地图</div>
+                <div class="-col4" style="text-align:right;">
+                    <button class="btn -mini -light -ft-base">下载客户端</button>
+                </div>
+            </div>
+        </div>
+        <ul id="index-widget-tabgroup" class="tab">
+            <li><a href="#"><i class="icon -marker"></i> 地图</a></li>
+            <li class="active"><a href="#"><i class="icon -place"></i> 周边</a></li>
+            <li><a href="#"><i class="icon -route"></i> 路线</a></li>
+        </ul>
+        <div id="index-widget-searchbox" class="container -lighter">
+            <div class="input-group">
+                <div class="input-text -brand">
+                    <input type="text" placeholder="搜索地点、公交车、路线" />
+                </div>
+                <input type="button" class="btn -brand" value="搜索" />
+            </div>
+        </div>
+        <div id="index-topbanner-widget" class="container -border">
+            点击打开手机地图，省90%流量
+        </div>
+        <div id="index-widget-nearby" class="container">
+            <div class="row -spacing-base">
+                <a href="#" class="thumbnail -col4">
+                 <div class="thumb-img nearby-icon ui3-canyin"></div>
+                 <div class="caption">美食</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-hotel"></div>
+                    <div class="caption">酒店</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+                    <div class="caption">电影院</div>
+                </a>
+            </div>
+            <div class="row -spacing-base">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-bus"></div>
+                    <div class="caption">公交车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-subway"></div>
+                    <div class="caption">地铁图</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-sale"></div>
+                    <div class="caption">团购</div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-streetview"></div>
+                    <div class="caption">全景</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-taxi"></div>
+                    <div class="caption">打车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon newui_1_nb"></div>
+                    <div class="caption">随便看看</div>
+                </a>
+            </div>
+        </div>
+        <div class="index-widget-thumbnail container">
+            <div class="row locbar -bg-light">
+                <button class="btn -mini -col2" style="font-size:20px"><i class="icon -location -large"></i></button>
+                <span class="-ft-tertiary -col10" style="text-align: center;">北京市海淀区信息路</span>
+            </div>
+        </div>
+        <div id="common-footer-widget" class="btn-group -bg-dark">
+            <button class="btn"><i class="icon -profile"></i> 个人中心</button>
+            <button class="btn"><i class="icon -message"></i> 意见反馈</button>
+            <button class="btn"><i class="icon -recommend"></i> 应用推荐</button>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.1
+*/
+/*
+路线页
+
+Markup:
+<div id="example-11-2" class="example-11">
+    <div class="-bg-normal -ft-base">
+        <ul id="index-widget-tabgroup" class="tab">
+            <li><a href="#"><i class="icon -marker"></i> 地图</a></li>
+            <li><a href="#"><i class="icon -place"></i> 周边</a></li>
+            <li class="active"><a href="#"><i class="icon -route"></i> 路线</a></li>
+        </ul>
+        <div id="index-widget-navebox">
+            <div class="container -lighter">
+                <div class="row">
+                <div class="-col2">
+                    <button class="btn -small"><i class="icon -reverse"></i></button>
+                </div>
+                <div class="-col10">
+                    <div class="input-group" style="margin-bottom:6px;">
+                        <div class="input-text -icon">
+                            <i class="icon -start -large" style="color: #62B211"></i>
+                            <input type="text" value="我的位置" />
+                        </div>
+                    </div>
+                    <div class="input-group" >
+                        <div class="input-text -icon">
+                            <i class="icon -end -large" style="color: #F50"></i>
+                            <input type="text" value="我的位置" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="btn-group -bg-light">
+                <button class="btn"><i class="icon -bus -ft-brand"></i> 公交</button>
+                <button class="btn"><i class="icon -drive -ft-brand"></i> 驾车</button>
+                <button class="btn"><i class="icon -walk -ft-brand"></i> 步行</button>
+            </div>
+        </div>
+        <div style="height: 200px">
+        </div>
+        <div class="common-widget-bottom-banner" style="background-image: url(http://map.baidu.com/fwmap/upload/index-groupon-download.png); display: block;">
+        </div>
+        <div id="common-footer-widget" class="btn-group -bg-dark">
+            <button class="btn"><i class="icon -profile"></i> 个人中心</button>
+            <button class="btn"><i class="icon -message"></i> 意见反馈</button>
+            <button class="btn"><i class="icon -recommend"></i> 应用推荐</button>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.2
+*/
+/*
+公交方案页
+
+Markup:
+<div id="example-11-3" class="example-11">
+    <div class="-bg-normal -ft-base">
+        <div class="common-widget-nav -bg-lighter">
+            <button class="btn" style="left:0;">
+                <i class="icon -back-arrow -ft-large"></i>
+            </button>
+            <div class="nav-center">
+            <span class="traffic-icons">
+                    <a href="#" ><i class="icon -bus -large -ft-brand" ></i></a>
+                    <a href="#" ><i class="icon -drive -large"></i></a>
+                    <a href="#" ><i class="icon -walk -large"></i></a>
+            </span>
+            </div>
+            <button class="btn -ft-brand" style="right:0">
+                地图
+            </button>
+        </div>
+        <div id="bus-list-wrap">
+        <ul class="tab -secondary">
+            <li class="active"><a href="#">较快捷</a></li>
+            <li><a href="#">少换乘</a></li>
+            <li><a href="#">少步行</a></li>
+        </ul>
+        <div class="container">
+            <div class="row -spacing-base">
+                <div class="-col6" style="padding-left:6px">
+                    <i class="icon -start -ft-large" style="color: #62B211"></i>
+                    我的位置
+                </div>
+                <div class="-col6" style="padding-left:10px">
+                    <i class="icon -end -ft-large" style="color: #F50;"></i>
+                    天安门
+                </div>
+            </div> 
+            <div class="row">
+                <div class="-col6" style="padding-right:4px">
+                    <div class="select-box -col12">
+                        <select name="date-time" value="今天 18:00 出发">
+                            <option>今天 18:00 出发</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="-col6" style="padding-left:4px">
+                    <div class="select-box -col12">
+                        <select name="filter" value="全部">
+                            <option>全部</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-group -bg-lighter -icon">
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">01</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">02</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">03</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+            <li class="bus-list-info">
+                <a href="#">
+                    <i class="list-icon">04</i>
+                    <div class="bus-info">
+                        <span>717路 > 地铁1号线<span><br>
+                        <span class="-ft-tertiary -ft-small">17:39到达，约1小时50分钟/22.6公里</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+</div>
+
+Styleguide 21.3
+*/
+/*
+地址选择页
+
+Markup:
+<div id="example-11-4" class="example-11">
+    <div class="addr-page -bg-normal -ft-base">
+        <div class="common-widget-nav -bg-lighter">
+            <button class="btn" style="left:0">
+                <i class="icon -back-arrow -ft-large"></i>
+            </button>
+            <div class="nav-center">
+                选择准确的地址
+            </div>
+            <button class="btn -ft-brand" style="right:0">
+                地图
+            </button>
+        </div>
+        <div id="addr-widget-list" class="container">
+            <div class="">
+                <div class="row">
+                    <div class="start-list -col12">
+                        <i class="img-icon start-addr"></i>
+                        起点：西二旗
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="end-list -col9">
+                        <i class="img-icon end-addr"></i>
+                        终点：清河
+                    </div>
+                    <a class="btn -small -col3" style="background:#f9914c">
+                        地图
+                    </a>
+                </div>
+                <ul class="list-group -bg-lighter">
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">A</i>
+                            <div class="addr-info">
+                                <p>清河</p>
+                                <p class="-ft-tertiary -ft-small">北京海淀区</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">B</i>
+                            <div class="addr-info">
+                                <p>清河</p>
+                                <p class="-ft-tertiary -ft-small">北京朝阳区</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">C</i>
+                            <div class="addr-info">
+                                <p>清河（北）</p>
+                                <p class="-ft-tertiary -ft-small">途径公交：618路</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">D</i>
+                            <div class="addr-info">
+                                <p>清河东路</p>
+                                <p class="-ft-tertiary -ft-small">北京市朝阳区</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="addr-list">
+                        <a href="#">
+                            <i class="img-icon icon-addr">E</i>
+                            <div class="addr-info">
+                                <p>清河大桥</p>
+                                <p class="-ft-tertiary -ft-small">北京市海淀区</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            <div>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.4
+*/
+/*
+随便看看页
+
+Markup:
+<div id="example-11-5" class="example-11">
+    <div class="addr-page -bg-normal -ft-base">
+        <div class="common-widget-nav -bg-lighter">
+            <button class="btn" style="left:0">
+                <i class="icon -back-arrow -ft-large"></i>
+            </button>
+            <div class="nav-center">
+                随便看看
+            </div>
+        </div>
+        <div class="index-widget-cater container">
+            <div class="row -spacing-base">
+                <div class="-col8">
+                    美食
+                </div>
+                <button class="btn -col4 -mini">查看全部</button>
+            </div>
+            <div class="row">
+                <a href="#" class="-col4">
+                    <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D1661204477%2C4084844711%26fm%3D22">
+                    <div class="">
+                        <p>悦东楼</p>
+                        <p class="star-box">
+                            <span class="star-score" style="width:45px;"></span>
+                        </p>
+                        <p>
+                            20 条评论
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="-col4">
+                    <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D1661204477%2C4084844711%26fm%3D22">
+                    <div class="caption">
+                        <p>悦东楼</p>
+                        <p class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </p>
+                        <p>
+                            20 条评论
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="-col4">
+                    <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D1661204477%2C4084844711%26fm%3D22">
+                    <div class="caption">
+                        <p>悦东楼</p>
+                        <p class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </p>
+                        <p>
+                            20 条评论
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="index-widget-cater container">
+            <div class="row -spacing-base">
+                <div class="-col8">
+                    酒店
+                </div>
+                <button class="btn -col4 -mini">查看全部</button>
+            </div>
+            <div class="row">
+                <div class="-col4">
+                    <a class="a-img" href="#">
+                        <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D4101312943%2C279755151%26fm%3D22">
+                    </a>
+                </div>
+                <div class="-col8">
+                    <p>速8酒店（北京立水桥店）</p> 
+                    <p>地址：北京市朝阳区安立路3号3层和1层大堂</p>
+                    <p>
+                        <span class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </span>
+                        <span>
+                            人均：￥136.0
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="-col4">
+                    <a class="a-img" href="#">
+                        <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D4101312943%2C279755151%26fm%3D22">
+                    </a>
+                </div>
+                <div class="-col8">
+                    <p>速8酒店（北京立水桥店）</p> 
+                    <p>地址：北京市朝阳区安立路3号3层和1层大堂</p>
+                    <p>
+                        <span class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </span>
+                        <span>
+                            人均：￥136.0
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="-col4">
+                    <a class="a-img" href="#">
+                        <img width="89" height="66" src="http://map.baidu.com/maps/services/thumbnails?width=180&amp;height=135&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D4101312943%2C279755151%26fm%3D22">
+                    </a>
+                </div>
+                <div class="-col8">
+                    <p>速8酒店（北京立水桥店）</p> 
+                    <p>地址：北京市朝阳区安立路3号3层和1层大堂</p>
+                    <p>
+                        <span class="star-box">
+                            <span class="star-score" style="width: 45px;"></span>
+                        </span>
+                        <span>
+                            人均：￥136.0
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="index-widget-bank container">
+            <div class="row -spacing-base">
+                <div class="-col8">
+                    银行
+                </div>
+                <button class="btn -col4 -mini">查看全部</button>
+            </div>
+            <div style="width:100%; display:table">
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank icbc"></div>
+                <div class="caption">工商银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank abc"></div>
+                <div class="caption">农业银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank cbc"></div>
+                <div class="caption">建设银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank boc"></div>
+                <div class="caption">中国银行</div>
+            </a>
+            <a href="#" class="thumbnail" style="display:table-cell"> 
+                <div class="thumb-img ibank atm"></div>
+                <div class="caption">ATM</div>
+            </a>
+            </div>
+        </div>
+        <div class="index-widget-nearby container">
+            <div class="row -spacing-base">
+                <div class="-col12">
+                    附近
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                 <div class="thumb-img nearby-icon ui3-canyin"></div>
+                 <div class="caption">美食</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-hotel"></div>
+                    <div class="caption">酒店</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+                    <div class="caption">电影院</div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-bus"></div>
+                    <div class="caption">公交车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-subway"></div>
+                    <div class="caption">地铁图</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-sale"></div>
+                    <div class="caption">团购</div>
+                </a>
+            </div>
+            
+            <div class="row">
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-streetview"></div>
+                    <div class="caption">全景</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon ui3-taxi"></div>
+                    <div class="caption">打车</div>
+                </a>
+                <a href="#" class="thumbnail -col4">
+                    <div class="thumb-img nearby-icon newui_1_nb"></div>
+                    <div class="caption">随便看看</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 21.5
+*/

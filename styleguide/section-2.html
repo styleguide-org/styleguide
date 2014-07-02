@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Webapp Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="../src/doc/sg.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper styleguide">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Waimai Webapp Style Guide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="2">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">首页</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">基本样式</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">容器</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">栅格系统</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">按钮</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">表单</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">缩略图</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Tab</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">列表</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">表格</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">弹出框</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">图标</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-21.html"><span class="kss-ref">21</span><span class="kss-name">示例</span></a></li>
+              
+              <li class="kss-menu-item"><a href="icons/demo.html"><span class="kss-ref">#</span><span class="kss-name">图标列表</span></a></li>
+            </ul>
+            
+            <ul class="kss-menu-child">
+              
+              
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-2.1"><span class="kss-ref">2.1</span><span class="kss-name">容器样式</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-2.2"><span class="kss-ref">2.2</span><span class="kss-name">容器颜色</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-2.3"><span class="kss-ref">2.3</span><span class="kss-name">卡片样式</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-2.4"><span class="kss-ref">2.4</span><span class="kss-name">卡片颜色</span></a></li>
+              
+              
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          
+          
+          <section id="section-2" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">2</span> 容器</h1>
+            
+            
+            <div class="kss-description">
+              <p>容器是组成页面布局的基本结构，通过容器将整个页面在横向上分割为各个区块, (下一节的栅格将在纵向上分割区块）。</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="example-window -bg-normal" style="width:360px"> 
+    <div class="container -border -light">Nav bar</div>
+    <div class="container -layout main -border">
+        <div class="card -base-h -lighter -spacing-base">
+            <div class="container -large-v -border">search box</div>
+            <div class="container -large-v">buttons</div>
+        </div>
+        <div class="card -large -light" style="height:300px">results body</div>
+    </div>
+    <div class="container -light">footer</div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;example-window -bg-normal&quot; style=&quot;width:360px&quot;&gt; 
+    &lt;div class=&quot;container -border -light&quot;&gt;Nav bar&lt;/div&gt;
+    &lt;div class=&quot;container -layout main -border&quot;&gt;
+        &lt;div class=&quot;card -base-h -lighter -spacing-base&quot;&gt;
+            &lt;div class=&quot;container -large-v -border&quot;&gt;search box&lt;/div&gt;
+            &lt;div class=&quot;container -large-v&quot;&gt;buttons&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card -large -light&quot; style=&quot;height:300px&quot;&gt;results body&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container -light&quot;&gt;footer&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-2.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.1</span> 容器样式</h1>
+            
+            
+            <div class="kss-description">
+              <p>可使用的容器有<code>card</code>和<code>container</code>两种基本容器。<code>card</code>是在<code>container</code> 的基础样式之上增加了border样式
+
+</p>
+<p>类名：<code>container</code>
+
+</p>
+<p><code>默认</code>
+
+</p>
+<p>可选参数：
+
+</p>
+<p><code>-base</code> -base-h + -base-v
+
+</p>
+<p><code>-large</code> -large-v + -base-h
+
+</p>
+<p><code>-small-h</code> 减少左右padding
+
+</p>
+<p><code>-small-v</code> 减少上下padding
+
+</p>
+<p><code>-base-h</code> 正常左右padding
+
+</p>
+<p><code>-base-v</code> 正常上下padding
+
+</p>
+<p><code>-large-h</code> 增加左右padding
+
+</p>
+<p><code>-large-v</code> 增加上下padding
+
+</p>
+<p><code>-border</code> 添加border-bottom
+
+</p>
+<p><code>-layout</code> 添加布局样式 -small-h + margin 上下为10px</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-7-1" style="width:360px">
+    <div class="container -light">
+        <div class="container -lighter ">normal container</div>
+        <div class="container -light -base"> -base</div>
+        <div class="container -light -large"> -large</div>
+        <div class="container -normal -small-v -large-h"> -small-v -large-h</div>
+        <div class="container -dark -border"> border container</div>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-7-1&quot; style=&quot;width:360px&quot;&gt;
+    &lt;div class=&quot;container -light&quot;&gt;
+        &lt;div class=&quot;container -lighter &quot;&gt;normal container&lt;/div&gt;
+        &lt;div class=&quot;container -light -base&quot;&gt; -base&lt;/div&gt;
+        &lt;div class=&quot;container -light -large&quot;&gt; -large&lt;/div&gt;
+        &lt;div class=&quot;container -normal -small-v -large-h&quot;&gt; -small-v -large-h&lt;/div&gt;
+        &lt;div class=&quot;container -dark -border&quot;&gt; border container&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-2.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.2</span> 容器颜色</h1>
+            
+            
+            <div class="kss-description">
+              <p>颜色定义和卡片相同</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-7-4">
+    <div class="container -lighter">lighter container</div>
+    <div class="container -light">light container</div>
+    <div class="container -normal">normal container</div>
+    <div class="container -dark">dark container</div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-7-4&quot;&gt;
+    &lt;div class=&quot;container -lighter&quot;&gt;lighter container&lt;/div&gt;
+    &lt;div class=&quot;container -light&quot;&gt;light container&lt;/div&gt;
+    &lt;div class=&quot;container -normal&quot;&gt;normal container&lt;/div&gt;
+    &lt;div class=&quot;container -dark&quot;&gt;dark container&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-2.3" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.3</span> 卡片样式</h1>
+            
+            
+            <div class="kss-description">
+              <p>类名: <code>card</code>
+
+</p>
+<p>可选参数：
+
+</p>
+<p><code>-base</code> -base-h + -base-h
+
+</p>
+<p><code>-large</code> -large-v + -base-h
+
+</p>
+<p><code>-small-h</code> 减少左右padding
+
+</p>
+<p><code>-small-v</code> 减少上下padding
+
+</p>
+<p><code>-base-h</code> 正常左右padding
+
+</p>
+<p><code>-base-v</code> 正常上下padding
+
+</p>
+<p><code>-large-h</code> 增加左右padding
+
+</p>
+<p><code>-large-v</code> 增加上下padding
+
+</p>
+<p><code>-layout</code> 添加布局样式 -base-h + -spacing-base</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-7-1" style="width:360px">
+    <div class="card -base">
+        <div class="card -light -spacing-base">normal card</div>
+        <div class="card -light -layout"> layout card</div>
+        <div class="card -light -large -spacing-base">large card</div>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-7-1&quot; style=&quot;width:360px&quot;&gt;
+    &lt;div class=&quot;card -base&quot;&gt;
+        &lt;div class=&quot;card -light -spacing-base&quot;&gt;normal card&lt;/div&gt;
+        &lt;div class=&quot;card -light -layout&quot;&gt; layout card&lt;/div&gt;
+        &lt;div class=&quot;card -light -large -spacing-base&quot;&gt;large card&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-2.4" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">2.4</span> 卡片颜色</h1>
+            
+            
+            <div class="kss-description">
+              <p><code>默认</code> 继承父级元素
+
+</p>
+<p>可选参数：
+
+</p>
+<p><code>-lighter</code> <br>
+<code>-light</code> <br>
+<code>-normal</code> <br>
+<code>-dark</code> <br></p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-7-2" style="width:360px">
+    <div class="card -large -lighter -spacing-base">lighter card</div>
+    <div class="card -large -light -spacing-base">light card</div>
+    <div class="card -large -normal -spacing-base">normal card</div>
+    <div class="card -large -dark">dark card</div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-7-2&quot; style=&quot;width:360px&quot;&gt;
+    &lt;div class=&quot;card -large -lighter -spacing-base&quot;&gt;lighter card&lt;/div&gt;
+    &lt;div class=&quot;card -large -light -spacing-base&quot;&gt;light card&lt;/div&gt;
+    &lt;div class=&quot;card -large -normal -spacing-base&quot;&gt;normal card&lt;/div&gt;
+    &lt;div class=&quot;card -large -dark&quot;&gt;dark card&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@import 'variables';
+ul.tab.-secondary {
+    & > li {
+        border-top: $border-default solid 1px;
+        font-size: $-ft-base;
+        & > a {
+            height: auto;
+            padding: $space-large-vertical 0;
+        }
+        &.active {
+            font-size: $-ft-base;
+            background-color: $-bg-lighter;
+            border-left: $border-default solid 1px;
+            border-right: $border-default solid 1px;
+            &:first-child {
+                border-left:none;
+            }
+            &:last-child {
+                border-right:none;
+            }
+        }
+    }
+}

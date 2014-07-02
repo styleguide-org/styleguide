@@ -1,0 +1,1 @@
+ul.tab.-secondary>li{border-top:#d7d8d9 solid 1px;font-size:14px}ul.tab.-secondary>li>a{height:auto;padding:15px 0}ul.tab.-secondary>li.active{font-size:14px;background-color:#fff;border-left:#d7d8d9 solid 1px;border-right:#d7d8d9 solid 1px}ul.tab.-secondary>li.active:first-child{border-left:none}ul.tab.-secondary>li.active:last-child{border-right:none}

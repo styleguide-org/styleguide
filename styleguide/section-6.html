@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Webapp Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="../src/doc/sg.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper styleguide">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">Waimai Webapp Style Guide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="6">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">首页</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">基本样式</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">容器</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-3.html"><span class="kss-ref">3</span><span class="kss-name">栅格系统</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span class="kss-name">按钮</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span class="kss-name">表单</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span class="kss-name">缩略图</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-7.html"><span class="kss-ref">7</span><span class="kss-name">Tab</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-8.html"><span class="kss-ref">8</span><span class="kss-name">列表</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-9.html"><span class="kss-ref">9</span><span class="kss-name">表格</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-10.html"><span class="kss-ref">10</span><span class="kss-name">弹出框</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-11.html"><span class="kss-ref">11</span><span class="kss-name">图标</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-21.html"><span class="kss-ref">21</span><span class="kss-name">示例</span></a></li>
+              
+              <li class="kss-menu-item"><a href="icons/demo.html"><span class="kss-ref">#</span><span class="kss-name">图标列表</span></a></li>
+            </ul>
+            
+            <ul class="kss-menu-child">
+              
+              
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.1"><span class="kss-ref">6.1</span><span class="kss-name">基本样式</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-6.2"><span class="kss-ref">6.2</span><span class="kss-name">示例</span></a></li>
+              
+              
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          
+          
+          <section id="section-6" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">6</span> 缩略图</h1>
+            
+            
+            
+          </section>
+          
+          <section id="section-6.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.1</span> 基本样式</h1>
+            
+            
+            <div class="kss-description">
+              <p>类名：<code>thumbnail</code>
+
+</p>
+<p>子元素部分：
+
+</p>
+<p>标签<code>&lt;img&gt;</code> 或 类名 <code>thumb-img</code> ：图像部分
+
+</p>
+<p>类名<code>caption</code> ；标题部分</p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-5-1 card">
+<div class="row">
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+<a href="#" class="thumbnail -col4">
+    <img src="http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png" height="90" width="90">
+    <div class="caption">
+        地图
+    </div>
+</a>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-5-1 card&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+    &lt;img src=&quot;http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png&quot; height=&quot;90&quot; width=&quot;90&quot;&gt;
+    &lt;div class=&quot;caption&quot;&gt;
+        地图
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+    &lt;img src=&quot;http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png&quot; height=&quot;90&quot; width=&quot;90&quot;&gt;
+    &lt;div class=&quot;caption&quot;&gt;
+        地图
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+    &lt;img src=&quot;http://s1.map.bdimg.com/mobile/simple/static/index/images/appicon_11094be.png&quot; height=&quot;90&quot; width=&quot;90&quot;&gt;
+    &lt;div class=&quot;caption&quot;&gt;
+        地图
+    &lt;/div&gt;
+&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-6.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">6.2</span> 示例</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="example-5-2" class="container -normal">
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-canyin"></div>
+            <div class="caption">美食</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-hotel"></div>
+            <div class="caption">酒店</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div src="" class="thumb-img nearby-icon ui3-movie"></div>
+            <div class="caption">电影院</div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-bus"></div>
+            <div class="caption">公交车</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-subway"></div>
+            <div class="caption">地铁图</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-sale"></div>
+            <div class="caption">团购</div>
+        </a>
+    </div>
+    <div class="row">
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-streetview"></div>
+            <div class="caption">全景</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon ui3-taxi"></div>
+            <div class="caption">打车</div>
+        </a>
+        <a href="#" class="thumbnail -col4">
+            <div class="thumb-img nearby-icon newui_1_nb"></div>
+            <div class="caption">随便看看</div>
+        </a>
+    </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;example-5-2&quot; class=&quot;container -normal&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-canyin&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;美食&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-hotel&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;酒店&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div src=&quot;&quot; class=&quot;thumb-img nearby-icon ui3-movie&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;电影院&lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-bus&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;公交车&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-subway&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;地铁图&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-sale&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;团购&lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-streetview&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;全景&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon ui3-taxi&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;打车&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;thumbnail -col4&quot;&gt;
+            &lt;div class=&quot;thumb-img nearby-icon newui_1_nb&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;caption&quot;&gt;随便看看&lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

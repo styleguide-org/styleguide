@@ -1,0 +1,116 @@
+@import '_variables';
+
+@mixin all-colors($border:false) {
+    @include color(-lighter, $-bg-lighter);
+    @include color(-light, $-bg-light);
+    @include color(-normal, $-bg-normal);
+    @include color(-dark, $-bg-dark);
+    @include color(-darker, $-bg-darker, $-ft-lighter);
+    @include color(-brand, $-bg-brand, $-ft-lighter);
+    @include color(-alert, $-bg-alert, $-ft-lighter);
+    @if $border {
+        @include border(-lighter, $border-default);
+        @include border(-light, $border-default);
+        @include border(-normal, $border-default);
+        @include border(-dark, $border-default);
+        @include border(-darker, darken($-bg-darker, 5%));
+        @include border(-brand, darken($-bg-brand, 5%));
+        @include border(-alert, darken($-bg-alert, 5%));
+    }
+}
+
+@mixin color($name:null, $bg-color:$-bg-normal, $ft-color:$-ft-primary) {
+    @if $name {
+        &.#{$name} {
+            background-color: $bg-color;
+            color: $ft-color;
+        }
+    } @else {
+        background-color: $bg-color;
+        color: $ft-color;
+    }
+}
+
+@mixin border($name:null, $border-color:$border-default, $border-round:null) {
+    @if $name {
+        &.#{$name} {
+            border: $border-color solid 1px;
+            @if $border-round {
+                @include border-round;
+            }
+        }
+    } @else {
+        border: $border-color solid 1px;
+        @if $border-round {
+            @include border-round;
+        }
+    }
+}
+
+@mixin border-round {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+@mixin clearfix {
+
+    &:before,&:after {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin angle($bg-color,
+             $solid-border,
+             $trans-border-1,
+             $trans-border-2,
+             $top: 0,
+             $left: 0,
+             $margin-top: 0,
+             $margin-left: 0) {
+
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-#{$solid-border}: 10px solid $bg-color;
+    border-#{$trans-border-1}: 8px solid transparent;
+    border-#{$trans-border-2}: 8px solid transparent;
+    top: $top;
+    left: $left;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+
+}
+
+@mixin vertical-center {
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+}
+
+@mixin popover-color($bg-color, $ft-color) {
+    .content {
+        background-color: $bg-color;
+        color: $ft-color;
+    }
+    &.-top-angle {
+        .angle {
+            border-bottom: $bg-color 10px solid;
+        }
+    }
+    &.-bottom-angle {
+        .angle {
+            border-top: $bg-color 10px solid;
+        }
+
+    }
+
+}
